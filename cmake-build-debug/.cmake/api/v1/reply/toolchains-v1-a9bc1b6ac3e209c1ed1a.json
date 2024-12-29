@@ -1,0 +1,94 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : {},
+				"path" : "D:/arm-none-eabi/13.3 rel1/bin/arm-none-eabi-gcc.exe",
+				"version" : ""
+			},
+			"language" : "ASM",
+			"sourceFileExtensions" : 
+			[
+				"s",
+				"S",
+				"asm"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"D:/arm-none-eabi/13.3 rel1/lib/gcc/arm-none-eabi/13.3.1/include",
+						"D:/arm-none-eabi/13.3 rel1/lib/gcc/arm-none-eabi/13.3.1/include-fixed",
+						"D:/arm-none-eabi/13.3 rel1/arm-none-eabi/include"
+					],
+					"linkDirectories" : [],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : []
+				},
+				"path" : "D:/arm-none-eabi/13.3 rel1/bin/arm-none-eabi-gcc.exe",
+				"version" : "13.3.1"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"D:/arm-none-eabi/13.3 rel1/arm-none-eabi/include/c++/13.3.1",
+						"D:/arm-none-eabi/13.3 rel1/arm-none-eabi/include/c++/13.3.1/arm-none-eabi",
+						"D:/arm-none-eabi/13.3 rel1/arm-none-eabi/include/c++/13.3.1/backward",
+						"D:/arm-none-eabi/13.3 rel1/lib/gcc/arm-none-eabi/13.3.1/include",
+						"D:/arm-none-eabi/13.3 rel1/lib/gcc/arm-none-eabi/13.3.1/include-fixed",
+						"D:/arm-none-eabi/13.3 rel1/arm-none-eabi/include"
+					],
+					"linkDirectories" : [],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : []
+				},
+				"path" : "D:/arm-none-eabi/13.3 rel1/bin/arm-none-eabi-g++.exe",
+				"version" : "13.3.1"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

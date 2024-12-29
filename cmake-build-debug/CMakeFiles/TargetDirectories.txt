@@ -1,0 +1,3 @@
+C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/Balance_leg_V2.elf.dir
+C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

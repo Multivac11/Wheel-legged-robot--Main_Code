@@ -1,0 +1,5 @@
+ToolSet: 11.0 w64 (local)@D:\CLion 2024.2.3\bin\mingw
+Ninja: 1.12.0@D:\CLion 2024.2.3\bin\ninja\win\x64\ninja.exe
+Options: 
+
+Options:
