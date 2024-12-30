@@ -1,7 +1,9 @@
 # Wheel legged robot——Main_Code
 ## 轮足机器人项目简介(详情见技术报告)
 ***
-![轮腿渲染图](/picture/轮腿机器人V2.jpg "轮腿渲染图")
+<div align="center">
+  <img src="picture/V2.JPG" width="80%" height="auto">
+</div>
 <div style="text-align: center;">
     轮腿机器人模型渲染预览图
 </div>
@@ -14,7 +16,7 @@
 ***
 ## 1.机械部分
 <div align="center">
-  <img src="picture/sw图纸.png" width="80%" height="auto">
+  <img src="picture/sw.png" width="80%" height="auto">
 </div>
 <div style="text-align: center;">
     solidworks装配图纸
