@@ -91,13 +91,13 @@
     - 单编码器
 
 <div align="center">
-  <img src="picture/A11485.JPG" width="60%" height="auto">
+  <img src="picture/A11485.jpg" width="60%" height="auto">
 </div>
 <div align="center">
     A1的485口接线顺序
 </div>
 <div align="center">
-  <img src="picture/TTL485.JPG" width="60%" height="auto">
+  <img src="picture/TTL485.jpg" width="60%" height="auto">
 </div>
 <div align="center">
     串口转485接线顺序
