@@ -19,7 +19,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
         task_clk.tim14_clk++;
         Check_FPS();
         Check_Status();
-//        set_moto_current(&hfdcan1,0x200,0,0);
+        Online_check();
+//        set_moto_current(&hfdcan1,0x200,1000,0);
 
 //        Modfiy_Speed_Cmd(&A1_Motor[A1_Motor_left_1].motor_send, 1, 2.0f);
 //        Modfiy_Speed_Cmd(&A1_Motor[A1_Motor_left_2].motor_send, 1, -0.5f);

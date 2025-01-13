@@ -57,8 +57,10 @@ void ELRS_UARTE_RxCallback(uint16_t Size)
     // (elrs_data_temp[i] == CRSF_ADDRESS_FLIGHT_CONTROLLER) && (elrs_data_temp[i + 1] == FrameLength) && (elrs_data_temp[i + 2] == CRSF_FRAMETYPE_RC_CHANNELS_PACKED);
     if (elrs_data_temp[0] == CRSF_ADDRESS_FLIGHT_CONTROLLER)
     {
+        elrs_data.rx_counter ++;
         if (elrs_data_temp[2] == CRSF_FRAMETYPE_RC_CHANNELS_PACKED) // 数据帧类型为RC通道数据
         {
+
             elrs_data.channels[0] = ((uint16_t)elrs_data_temp[3] >> 0 | ((uint16_t)elrs_data_temp[4] << 8)) & 0x07FF;
             elrs_data.channels[1] = ((uint16_t)elrs_data_temp[4] >> 3 | ((uint16_t)elrs_data_temp[5] << 5)) & 0x07FF;
             elrs_data.channels[2] = ((uint16_t)elrs_data_temp[5] >> 6 | ((uint16_t)elrs_data_temp[6] << 2) | ((uint16_t)elrs_data_temp[7] << 10)) & 0x07FF;
@@ -79,14 +81,30 @@ void ELRS_UARTE_RxCallback(uint16_t Size)
             elrs_data.Left_Y = float_Map_with_median(elrs_data.channels[2], 174, 1811, 992, 0, 100);
             elrs_data.Left_X = float_Map_with_median(elrs_data.channels[0], 174, 1811, 992, -100, 100);
             elrs_data.Right_Y = float_Map_with_median(elrs_data.channels[1], 174, 1808, 992, -100, 100);
-            elrs_data.S1 = float_Map_with_median(elrs_data.channels[8], 191, 1792, 992, 0, 100);
-            elrs_data.S2 = float_Map_with_median(elrs_data.channels[9], 191, 1792, 992, 0, 100);
-            elrs_data.A = elrs_data.channels[10] > 1000 ? 1 : 0;
-            elrs_data.B = elrs_data.channels[5] == 992 ? 1 : (elrs_data.channels[5] == 1792 ? 2 : 0);
-            elrs_data.C = elrs_data.channels[6] == 992 ? 1 : (elrs_data.channels[6] == 1792 ? 2 : 0);
-            elrs_data.D = elrs_data.channels[11] > 1000 ? 1 : 0;
-            elrs_data.E = elrs_data.channels[4] == 992 ? 1 : (elrs_data.channels[4] == 1792 ? 2 : 0);
-            elrs_data.F = elrs_data.channels[7] == 992 ? 1 : (elrs_data.channels[7] == 1792 ? 2 : 0);
+//            elrs_data.E = float_Map_with_median(elrs_data.channels[8], 191, 1792, 992, 0, 100);
+//            elrs_data.F = float_Map_with_median(elrs_data.channels[9], 191, 1792, 992, 0, 100);
+            elrs_data.A = elrs_data.channels[6];
+            elrs_data.B = elrs_data.channels[7];
+
+            switch(elrs_data.A)
+            {
+                case 191: elrs_data.A = 0;break;
+                case 229: elrs_data.A = 1;break;
+                case 0  : elrs_data.A = 2;break;
+            }
+
+            switch(elrs_data.B)
+            {
+                case 191: elrs_data.B = 0;break;
+                case 229: elrs_data.B = 1;break;
+                case 0  : elrs_data.B = 2;break;
+            }
+            elrs_data.C = (elrs_data.channels[4] == 191) ? 0 : 1;  //按下为1，不按下为0
+            elrs_data.D = (elrs_data.channels[5] == 191) ? 0 : 1;
+            elrs_data.E = (elrs_data.channels[8] == 191) ? 0 : 1;
+            elrs_data.F = (elrs_data.channels[9] == 191) ? 0 : 1;
+            elrs_data.S1 = elrs_data.channels[11] - 191;  //0-1601
+            elrs_data.S2 = elrs_data.channels[10] - 191;  //0-1601
 
         }
         else if (elrs_data_temp[2] == CRSF_FRAMETYPE_LINK_STATISTICS)
@@ -113,6 +131,23 @@ void ELRS_UARTE_RxCallback(uint16_t Size)
         }
     }
 
+    if(elrs_data.Online == 0)
+    {
+        elrs_data.Right_X = 0;
+        elrs_data.Right_Y = 0;
+        elrs_data.Left_X = 0;
+        elrs_data.Left_Y = 0;
+        elrs_data.A = 0;
+        elrs_data.B = 0;
+        elrs_data.C = 0;
+        elrs_data.D = 0;
+        elrs_data.E = 0;
+        elrs_data.F = 0;
+        elrs_data.S1 = 0;
+        elrs_data.S2 = 0;
+    }
+
+    elrs_data.Online_counter = 0;
     memset(elrs_data_temp, 0, sizeof(elrs_data_temp));
     ELRS_Init();
 }

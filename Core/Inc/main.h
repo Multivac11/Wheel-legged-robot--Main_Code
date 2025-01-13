@@ -31,7 +31,11 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
+#include "Hardware_Config.h"
+#include "A1_Motor.h"
+#include "CH010_HI91.h"
+#include "ELRS_Drive.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

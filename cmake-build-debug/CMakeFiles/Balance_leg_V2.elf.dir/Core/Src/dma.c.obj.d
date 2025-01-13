@@ -53,4 +53,14 @@ CMakeFiles/Balance_leg_V2.elf.dir/Core/Src/dma.c.obj: \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_tim.h \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_tim_ex.h \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart.h \
- C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart_ex.h
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart_ex.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/stdio.h \
+ D:/arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/sys/stdio.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App/Hardware_Config.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\Motor_A1/A1_Motor.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\Motor_A1/motor_msg.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Core\Inc/usart.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\HI91/CH010_HI91.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Core\Inc/main.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\ELRS_Control/ELRS_Drive.h

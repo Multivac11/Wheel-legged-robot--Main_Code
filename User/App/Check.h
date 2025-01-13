@@ -7,5 +7,6 @@
 
 void Check_FPS(void);
 void Check_Status(void);
+void Online_check(void);
 
 #endif //BALANCE_LEG_V2_CHECK_H

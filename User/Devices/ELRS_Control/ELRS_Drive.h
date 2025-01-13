@@ -79,8 +79,8 @@ typedef struct
     float Left_Y;          // 左摇杆y轴
     float Right_X;         // 右摇杆x轴
     float Right_Y;         // 右摇杆y轴
-    float S1;              // 左滑块
-    float S2;              // 右滑块
+    uint16_t S1;              // 左滑块
+    uint16_t S2;              // 右滑块
     uint8_t A;             // 按键A
     uint8_t B;             // 拨杆B
     uint8_t C;             // 拨杆C
@@ -102,6 +102,10 @@ typedef struct
 
     // CRSF_FRAMETYPE_HEARTBEAT 心跳
     uint16_t heartbeat_counter; // 心跳计数器
+    uint16_t rx_counter;
+    uint16_t FPS;
+    uint16_t Online_counter;
+    uint8_t  Online;
 
 } ELRS_Data;
 

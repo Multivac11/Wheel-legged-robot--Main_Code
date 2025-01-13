@@ -65,6 +65,7 @@ void HI91_UARTE_RxCallback(uint16_t Size)
     {
         hi91_data.eorror_crc_count++;
     }
+
     CH010_HI91_Init();
 }
 

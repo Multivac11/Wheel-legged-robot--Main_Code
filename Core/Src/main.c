@@ -27,10 +27,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <stdio.h>
-#include "Hardware_Config.h"
-#include "A1_Motor.h"
-#include "CH010_HI91.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -123,8 +120,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      printf("%d,%f,%f,%f\n", hi91_data.FPS,hi91_data.yaw,-hi91_data.roll,hi91_data.pitch);
-
+//      printf("%d,%f,%f,%f\n", hi91_data.FPS,hi91_data.yaw,-hi91_data.roll,hi91_data.pitch);
+      printf("%d,%d,%f,%f,%f,%f,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", hi91_data.FPS,elrs_data.FPS,elrs_data.Left_X,elrs_data.Left_Y,elrs_data.Right_X,elrs_data.Right_Y,elrs_data.A,elrs_data.B,
+      elrs_data.C,elrs_data.D,elrs_data.E,elrs_data.F,elrs_data.S1,elrs_data.S2,elrs_data.Online);
 //      printf("%f,%f,%f\n", A1_Motor[1].motor_recv.Pos,A1_Motor[0].motor_recv.W,A1_Motor[1].motor_recv.W);
       HAL_Delay(10);
     /* USER CODE END WHILE */
