@@ -18,7 +18,17 @@ extern DMA_HandleTypeDef hdma_uart4_rx;
 extern DMA_HandleTypeDef hdma_uart7_rx;
 extern DMA_HandleTypeDef hdma_uart9_rx;
 
-
+/**
+  *     轮腿俯视图
+  *                                   正面
+  *     ID:1 usart3  A1_Motor_left_1        ID:2 usart4  A1_Motor_right_1
+  *
+  *
+  *     ID:0 usart9  A1_Motor_left_2       ID:1 usart7   A1_Motor_right_2
+  *
+  *                                   背面
+  *
+  */
 
 void A1_Motor_Init(uint8_t motor)
 {
@@ -34,13 +44,13 @@ void A1_Motor_Init(uint8_t motor)
     }
     if(motor == A1_Motor_right_1)
     {
-        HAL_UARTEx_ReceiveToIdle_DMA(&huart7, A1MotorA1_recv_date[A1_Motor_right_1], A1_Motor_Recv_Len); // 启用空闲中断接收
-        __HAL_DMA_DISABLE_IT(&hdma_uart7_rx, DMA_IT_HT);                      // 关闭DMA传输过半中断
+        HAL_UARTEx_ReceiveToIdle_DMA(&huart4, A1MotorA1_recv_date[A1_Motor_right_1], A1_Motor_Recv_Len); // 启用空闲中断接收
+        __HAL_DMA_DISABLE_IT(&hdma_uart4_rx, DMA_IT_HT);                      // 关闭DMA传输过半中断
     }
     if(motor == A1_Motor_right_2)
     {
-        HAL_UARTEx_ReceiveToIdle_DMA(&huart4, A1MotorA1_recv_date[A1_Motor_right_2], A1_Motor_Recv_Len); // 启用空闲中断接收
-        __HAL_DMA_DISABLE_IT(&hdma_uart4_rx, DMA_IT_HT);                      // 关闭DMA传输过半中断
+        HAL_UARTEx_ReceiveToIdle_DMA(&huart7, A1MotorA1_recv_date[A1_Motor_right_2], A1_Motor_Recv_Len); // 启用空闲中断接收
+        __HAL_DMA_DISABLE_IT(&hdma_uart7_rx, DMA_IT_HT);                      // 关闭DMA传输过半中断
     }
 
 }
@@ -129,7 +139,6 @@ void Modfiy_Torque_Cmd(motor_send_t *send,uint8_t id, float torque)
 void A1_Motor_Send_Cmd(motor_send_t *send,uint8_t motor)
 {
 
-
     send->motor_send_data.head.start[0] = 0xFE;
     send->motor_send_data.head.start[1] = 0xEE;
     send->motor_send_data.head.motorID = send->id;
@@ -163,11 +172,11 @@ void A1_Motor_Send_Cmd(motor_send_t *send,uint8_t motor)
     }
     if(motor == A1_Motor_right_1)
     {
-        HAL_UART_Transmit_DMA(&huart7, A1MotorA1_send_date[motor], A1_Motor_Send_Len);
+        HAL_UART_Transmit_DMA(&huart4, A1MotorA1_send_date[motor], A1_Motor_Send_Len);
     }
     if(motor == A1_Motor_right_2)
     {
-        HAL_UART_Transmit_DMA(&huart4, A1MotorA1_send_date[motor], A1_Motor_Send_Len);
+        HAL_UART_Transmit_DMA(&huart7, A1MotorA1_send_date[motor], A1_Motor_Send_Len);
     }
 
 }
@@ -193,6 +202,8 @@ void A1_Motor_Recv_Cmd(motor_recv_t *recv,uint8_t motor)
     recv->W = ((float)recv->motor_recv_data.Mdata.W / 128.0f)/9.1f;                           //减速后的角速度
     recv->Acc = recv->motor_recv_data.Mdata.Acc;
     recv->Rx_count ++;
+
+    memset(A1MotorA1_recv_date[motor], 0, sizeof(A1MotorA1_recv_date[motor]));
 
     A1_Motor_Init(motor);
 }

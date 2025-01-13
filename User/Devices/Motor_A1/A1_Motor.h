@@ -13,6 +13,12 @@ extern unitree_motor_t A1_Motor[4];
 #define  A1_Motor_left_2    1
 #define  A1_Motor_right_1   2
 #define  A1_Motor_right_2   3
+
+#define  A1_Motor_left_1_ID     1
+#define  A1_Motor_left_2_ID     0
+#define  A1_Motor_right_1_ID    2
+#define  A1_Motor_right_2_ID    1
+
 #define  A1_Motor_num       4
 #define  A1_Motor_Recv_Len    78
 #define  A1_Motor_Send_Len    34

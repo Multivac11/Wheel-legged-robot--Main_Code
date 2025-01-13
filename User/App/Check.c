@@ -40,11 +40,12 @@ void Online_check(void)
 
     if(elrs_data.Online_counter < 10)
     {
-        elrs_data.Online = 1;
+        elrs_data.isOnline = 1;
     }
     else
     {
-        elrs_data.Online = 0;
+        elrs_data.isOnline = 0;
+        HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, GPIO_PIN_RESET);
     }
 }
 

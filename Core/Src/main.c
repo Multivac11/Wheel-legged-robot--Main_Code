@@ -79,6 +79,14 @@ int main(void)
   /* MPU Configuration--------------------------------------------------------*/
   MPU_Config();
 
+  /* Enable the CPU Cache */
+
+  /* Enable I-Cache---------------------------------------------------------*/
+  SCB_EnableICache();
+
+  /* Enable D-Cache---------------------------------------------------------*/
+  SCB_EnableDCache();
+
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
@@ -121,9 +129,10 @@ int main(void)
   while (1)
   {
 //      printf("%d,%f,%f,%f\n", hi91_data.FPS,hi91_data.yaw,-hi91_data.roll,hi91_data.pitch);
-      printf("%d,%d,%f,%f,%f,%f,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", hi91_data.FPS,elrs_data.FPS,elrs_data.Left_X,elrs_data.Left_Y,elrs_data.Right_X,elrs_data.Right_Y,elrs_data.A,elrs_data.B,
-      elrs_data.C,elrs_data.D,elrs_data.E,elrs_data.F,elrs_data.S1,elrs_data.S2,elrs_data.Online);
+//      printf("%d,%d,%f,%f,%f,%f,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", hi91_data.FPS,elrs_data.FPS,elrs_data.Left_X,elrs_data.Left_Y,elrs_data.Right_X,elrs_data.Right_Y,elrs_data.A,elrs_data.B,
+//      elrs_data.C,elrs_data.D,elrs_data.E,elrs_data.F,elrs_data.S1,elrs_data.S2,elrs_data.isOnline);
 //      printf("%f,%f,%f\n", A1_Motor[1].motor_recv.Pos,A1_Motor[0].motor_recv.W,A1_Motor[1].motor_recv.W);
+      printf("%d,%d,%d,%d,%d\n", A1_Motor[A1_Motor_left_1].motor_recv.FPS,A1_Motor[A1_Motor_left_2].motor_recv.FPS,A1_Motor[A1_Motor_right_1].motor_recv.FPS,A1_Motor[A1_Motor_right_2].motor_recv.FPS,hi91_data.FPS);
       HAL_Delay(10);
     /* USER CODE END WHILE */
 
@@ -233,15 +242,15 @@ void MPU_Config(void)
   */
   MPU_InitStruct.Enable = MPU_REGION_ENABLE;
   MPU_InitStruct.Number = MPU_REGION_NUMBER0;
-  MPU_InitStruct.BaseAddress = 0x0;
-  MPU_InitStruct.Size = MPU_REGION_SIZE_4GB;
-  MPU_InitStruct.SubRegionDisable = 0x87;
-  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
-  MPU_InitStruct.AccessPermission = MPU_REGION_NO_ACCESS;
-  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_DISABLE;
+  MPU_InitStruct.BaseAddress = 0x24000000;
+  MPU_InitStruct.Size = MPU_REGION_SIZE_512KB;
+  MPU_InitStruct.SubRegionDisable = 0x00;
+  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL1;
+  MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
+  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_ENABLE;
   MPU_InitStruct.IsShareable = MPU_ACCESS_SHAREABLE;
-  MPU_InitStruct.IsCacheable = MPU_ACCESS_NOT_CACHEABLE;
-  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+  MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
+  MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
 
   HAL_MPU_ConfigRegion(&MPU_InitStruct);
   /* Enables the MPU */

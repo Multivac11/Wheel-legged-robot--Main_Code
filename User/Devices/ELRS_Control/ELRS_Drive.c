@@ -131,7 +131,7 @@ void ELRS_UARTE_RxCallback(uint16_t Size)
         }
     }
 
-    if(elrs_data.Online == 0)
+    if(elrs_data.isOnline == 0)
     {
         elrs_data.Right_X = 0;
         elrs_data.Right_Y = 0;

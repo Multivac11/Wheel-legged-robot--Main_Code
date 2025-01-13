@@ -1000,6 +1000,30 @@ User/App/Control_logic.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.s
 .PHONY : User/App/Control_logic.c.s
 
+User/App/ELRS_task.obj: User/App/ELRS_task.c.obj
+.PHONY : User/App/ELRS_task.obj
+
+# target to build an object file
+User/App/ELRS_task.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj
+.PHONY : User/App/ELRS_task.c.obj
+
+User/App/ELRS_task.i: User/App/ELRS_task.c.i
+.PHONY : User/App/ELRS_task.i
+
+# target to preprocess a source file
+User/App/ELRS_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.i
+.PHONY : User/App/ELRS_task.c.i
+
+User/App/ELRS_task.s: User/App/ELRS_task.c.s
+.PHONY : User/App/ELRS_task.s
+
+# target to generate assembly for a file
+User/App/ELRS_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.s
+.PHONY : User/App/ELRS_task.c.s
+
 User/App/Hardware_Config.obj: User/App/Hardware_Config.c.obj
 .PHONY : User/App/Hardware_Config.obj
 
@@ -1286,6 +1310,9 @@ help:
 	@echo ... User/App/Control_logic.obj
 	@echo ... User/App/Control_logic.i
 	@echo ... User/App/Control_logic.s
+	@echo ... User/App/ELRS_task.obj
+	@echo ... User/App/ELRS_task.i
+	@echo ... User/App/ELRS_task.s
 	@echo ... User/App/Hardware_Config.obj
 	@echo ... User/App/Hardware_Config.i
 	@echo ... User/App/Hardware_Config.s

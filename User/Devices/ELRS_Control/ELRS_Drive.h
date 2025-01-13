@@ -105,7 +105,7 @@ typedef struct
     uint16_t rx_counter;
     uint16_t FPS;
     uint16_t Online_counter;
-    uint8_t  Online;
+    uint8_t  isOnline;
 
 } ELRS_Data;
 

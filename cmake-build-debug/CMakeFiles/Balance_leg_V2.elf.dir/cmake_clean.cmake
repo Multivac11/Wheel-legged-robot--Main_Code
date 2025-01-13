@@ -75,6 +75,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj.d"
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj"
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj.d"
+  "CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj"
+  "CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj.d"
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj"
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj.d"
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj"

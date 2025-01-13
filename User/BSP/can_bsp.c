@@ -151,8 +151,8 @@ void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)
 			
 			switch(RxHeader1.Identifier)
 			{//电机反馈ID
-                case 0x201 :Motor3508_update_data(&chassis_move.wheel_motor[0].para, g_Can1RxData.Data);break;
-                case 0x202 :Motor3508_update_data(&chassis_move.wheel_motor[1].para, g_Can1RxData.Data);break;
+                case 0x201 :Motor3508_update_data(&chassis_move.wheel_motor[1].para, g_Can1RxData.Data);break;//左腿轮毂
+//                case 0x202 :Motor3508_update_data(&chassis_move.wheel_motor[1].para, g_Can1RxData.Data);break;
 //                case 3 :dm4310_fbdata(&chassis_move.joint_motor[0], g_Can1RxData,RxHeader1.DataLength);break;
 //                case 4 :dm4310_fbdata(&chassis_move.joint_motor[1], g_Can1RxData,RxHeader1.DataLength);break;
 //				case 0 :dm6215_fbdata(&chassis_move.wheel_motor[0], g_Can1RxData,RxHeader1.DataLength);break;
@@ -173,8 +173,8 @@ void HAL_FDCAN_RxFifo1Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo1ITs)
       HAL_FDCAN_GetRxMessage(hfdcan, FDCAN_RX_FIFO1, &RxHeader2, g_Can2RxData.Data);
 			switch(RxHeader2.Identifier)
 			{ //电机反馈ID
-                case 0x201 :Motor3508_update_data(&chassis_move.wheel_motor[0].para, g_Can2RxData.Data);break;
-                case 0x202 :Motor3508_update_data(&chassis_move.wheel_motor[1].para, g_Can2RxData.Data);break;
+                case 0x201 :Motor3508_update_data(&chassis_move.wheel_motor[0].para, g_Can2RxData.Data);break;//右腿轮毂
+//                case 0x202 :Motor3508_update_data(&chassis_move.wheel_motor[1].para, g_Can2RxData.Data);break;
 //                case 3 :dm4310_fbdata(&chassis_move.joint_motor[2], g_Can2RxData,RxHeader2.DataLength);break;
 //                case 4 :dm4310_fbdata(&chassis_move.joint_motor[3], g_Can2RxData,RxHeader2.DataLength);break;
 //				case 0 :dm6215_fbdata(&chassis_move.wheel_motor[1], g_Can2RxData,RxHeader2.DataLength);break;
