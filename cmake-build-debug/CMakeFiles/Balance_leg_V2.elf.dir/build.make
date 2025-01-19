@@ -543,10 +543,80 @@ CMakeFiles/Balance_leg_V2.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Balance_leg_V2.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c -o CMakeFiles\Balance_leg_V2.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c.s
 
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Algorithm/Filter.c
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.obj"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Filter.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Filter.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\Filter.c
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.i"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\Filter.c > CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Filter.c.i
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.s"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\Filter.c -o CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Filter.c.s
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Algorithm/Kalman_filter.c
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.obj"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Kalman_filter.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Kalman_filter.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\Kalman_filter.c
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.i"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\Kalman_filter.c > CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Kalman_filter.c.i
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.s"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\Kalman_filter.c -o CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Kalman_filter.c.s
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Algorithm/Pid.c
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.obj"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Pid.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Pid.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\Pid.c
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.i"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\Pid.c > CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Pid.c.i
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.s"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\Pid.c -o CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\Pid.c.s
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Algorithm/VMC_calc.c
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.obj"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\VMC_calc.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\VMC_calc.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\VMC_calc.c
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.i"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\VMC_calc.c > CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\VMC_calc.c.i
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.s"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm\VMC_calc.c -o CMakeFiles\Balance_leg_V2.elf.dir\User\Algorithm\VMC_calc.c.s
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
+CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/App/Chassis_L.c
+CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\App\Chassis_L.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\Chassis_L.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Chassis_L.c
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.i"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Chassis_L.c > CMakeFiles\Balance_leg_V2.elf.dir\User\App\Chassis_L.c.i
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.s"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Chassis_L.c -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\Chassis_L.c.s
+
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/App/Chassis_R.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\App\Chassis_R.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\Chassis_R.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Chassis_R.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.i: cmake_force
@@ -560,7 +630,7 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.s: cmake_force
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/App/Check.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\App\Check.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\Check.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Check.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.i: cmake_force
@@ -574,7 +644,7 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.s: cmake_force
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/App/Control_logic.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\App\Control_logic.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\Control_logic.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Control_logic.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.i: cmake_force
@@ -588,7 +658,7 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.s: cmake_force
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/App/ELRS_task.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\App\ELRS_task.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\ELRS_task.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\ELRS_task.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.i: cmake_force
@@ -599,10 +669,24 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.s"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\ELRS_task.c -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\ELRS_task.c.s
 
+CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
+CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/App/Facial_expression.c
+CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\App\Facial_expression.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\Facial_expression.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Facial_expression.c
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.i"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Facial_expression.c > CMakeFiles\Balance_leg_V2.elf.dir\User\App\Facial_expression.c.i
+
+CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.s"
+	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Facial_expression.c -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\Facial_expression.c.s
+
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/App/Hardware_Config.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\App\Hardware_Config.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\Hardware_Config.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Hardware_Config.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.i: cmake_force
@@ -616,7 +700,7 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.s: cmake_force
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/App/USART_Callback.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\App\USART_Callback.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\App\USART_Callback.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\USART_Callback.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.i: cmake_force
@@ -630,7 +714,7 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.s: cmake_force
 CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/BSP/can_bsp.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\BSP\can_bsp.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\BSP\can_bsp.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\BSP\can_bsp.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.i: cmake_force
@@ -644,7 +728,7 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.s: cmake_force
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/Dji_motor/Motor_Dji.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\Devices\Dji_motor\Motor_Dji.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\Devices\Dji_motor\Motor_Dji.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\Dji_motor\Motor_Dji.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.i: cmake_force
@@ -658,7 +742,7 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.s: cmake_fo
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/ELRS_Control/ELRS_Drive.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\Devices\ELRS_Control\ELRS_Drive.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\Devices\ELRS_Control\ELRS_Drive.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\ELRS_Control\ELRS_Drive.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.i: cmake_force
@@ -672,7 +756,7 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.s: cmak
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/HI91/CH010_HI91.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\Devices\HI91\CH010_HI91.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\Devices\HI91\CH010_HI91.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\HI91\CH010_HI91.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.i: cmake_force
@@ -686,7 +770,7 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.s: cmake_force
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/flags.make
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/Motor_A1/A1_Motor.c
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj: CMakeFiles/Balance_leg_V2.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj"
 	"D:\arm-none-eabi\13.3 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj -MF CMakeFiles\Balance_leg_V2.elf.dir\User\Devices\Motor_A1\A1_Motor.c.obj.d -o CMakeFiles\Balance_leg_V2.elf.dir\User\Devices\Motor_A1\A1_Motor.c.obj -c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\Motor_A1\A1_Motor.c
 
 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.i: cmake_force
@@ -733,10 +817,16 @@ Balance_leg_V2_elf_OBJECTS = \
 "CMakeFiles/Balance_leg_V2.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj" \
 "CMakeFiles/Balance_leg_V2.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj" \
 "CMakeFiles/Balance_leg_V2.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj" \
+"CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.obj" \
+"CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.obj" \
+"CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.obj" \
+"CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.obj" \
+"CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj" \
 "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj" \
 "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj" \
 "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj" \
 "CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj" \
+"CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj" \
 "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj" \
 "CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj" \
 "CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj" \
@@ -782,10 +872,16 @@ Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/Drivers/STM32H7xx_HAL_Driv
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
+Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.obj
+Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.obj
+Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.obj
+Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.obj
+Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj
+Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj
@@ -795,7 +891,7 @@ Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/build.make
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking C executable Balance_leg_V2.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking C executable Balance_leg_V2.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Balance_leg_V2.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/Balance_leg_V2.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/Balance_leg_V2.bin"

@@ -10,6 +10,9 @@
 #include "Control_logic.h"
 #include "tim.h"
 #include "A1_Motor.h"
+#include "Chassis_R.h"
+#include "Chassis_L.h"
+#include "Facial_expression.h"
 
 Clock task_clk;
 void HardwareConfig(void) {
@@ -17,11 +20,13 @@ void HardwareConfig(void) {
     FDCAN2_Config();
     CH010_HI91_Init();
     ELRS_Init();
-    A1_Motor_Init(A1_Motor_left_1);
-    A1_Motor_Init(A1_Motor_left_2);
-    A1_Motor_Init(A1_Motor_right_1);
-    A1_Motor_Init(A1_Motor_right_2);
+    Facial_expression_init();
+
+    ChassisR_init(&chassis_move,&right);
     HAL_Delay(50);
+    ChassisL_init(&chassis_move,&left);
+    HAL_Delay(50);
+
     HAL_TIM_Base_Start_IT(&htim14);
 
 

@@ -71,4 +71,8 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj: \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\Motor_A1/motor_msg.h \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Check.h \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\ELRS_task.h \
- C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Chassis_R.h
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Chassis_R.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm/pid.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm/VMC_calc.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Chassis_L.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Facial_expression.h

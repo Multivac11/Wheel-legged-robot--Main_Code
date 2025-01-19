@@ -120,6 +120,7 @@ int main(void)
   MX_UART9_Init();
   MX_UART4_Init();
   MX_UART7_Init();
+  MX_UART8_Init();
   /* USER CODE BEGIN 2 */
   HardwareConfig();
   /* USER CODE END 2 */

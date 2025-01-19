@@ -10,11 +10,11 @@ void ELRS_Task(ELRS_Data *Elrs_data,chassis_t *chassis)
 {
     if(Elrs_data->E == 1)
     {
-        chassis->start_flag == 1;
+        chassis->start_flag = 1;
     }
     else if(Elrs_data->E == 0)
     {
-        chassis->start_flag == 0;
+        chassis->start_flag = 0;
     }
 }
 

@@ -7,6 +7,7 @@
 #include "ELRS_Drive.h"
 #include "CH010_HI91.h"
 #include "A1_Motor.h"
+#include "Facial_expression.h"
 
 /**
   * @brief  串口空闲中断回调函数
@@ -37,6 +38,10 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
     {
         HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_15);
         A1_Motor_Recv_Cmd(&A1_Motor[A1_Motor_right_2].motor_recv,A1_Motor_right_2);
+    }
+    if(huart == &huart8)
+    {
+        Facial_expression_Callback();
     }
     if (huart == &huart10)
     {
@@ -75,6 +80,10 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
     if(huart == &huart7)
     {
         A1_Motor_Init(A1_Motor_right_2);
+    }
+    if(huart == &huart8)
+    {
+        Facial_expression_init();
     }
     if(huart == &huart10)
     {

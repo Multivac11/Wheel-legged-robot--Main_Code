@@ -135,8 +135,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7o2qq3"
-      binary: "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7o2qq3"
+      source: "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6xc73z"
+      binary: "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6xc73z"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -145,13 +145,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7o2qq3'
+        Change Dir: 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6xc73z'
         
-        Run Build Command(s): "D:/CLion 2024.2.3/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_269e6/fast
-        D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_269e6.dir\\build.make CMakeFiles/cmTC_269e6.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7o2qq3'
-        Building C object CMakeFiles/cmTC_269e6.dir/CMakeCCompilerABI.c.obj
-        "D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.obj -c "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "D:/CLion 2024.2.3/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_79627/fast
+        D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_79627.dir\\build.make CMakeFiles/cmTC_79627.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6xc73z'
+        Building C object CMakeFiles/cmTC_79627.dir/CMakeCCompilerABI.c.obj
+        "D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.obj -c "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-gcc.exe
         Target: arm-none-eabi
@@ -159,8 +159,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 13.3.1 20240614 (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_269e6.dir\\'
-         D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/cc1.exe -quiet -v -iprefix D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/ -isysroot D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi -D__USES_INITFINI__ D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_269e6.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\w1445\\AppData\\Local\\Temp\\ccrWjnSA.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_79627.dir\\'
+         D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/cc1.exe -quiet -v -iprefix D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/ -isysroot D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi -D__USES_INITFINI__ D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_79627.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\w1445\\AppData\\Local\\Temp\\cc5UkaYu.s
         GNU C17 (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) version 13.3.1 20240614 (arm-none-eabi)
         	compiled by GNU C version 9.3-win32 20200320, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -177,18 +177,18 @@ events:
          D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: d51ba7f24bad5b83998bb941572c85c4
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_269e6.dir\\'
-         D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.obj C:\\Users\\w1445\\AppData\\Local\\Temp\\ccrWjnSA.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_79627.dir\\'
+         D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.obj C:\\Users\\w1445\\AppData\\Local\\Temp\\cc5UkaYu.s
         GNU assembler version 2.42.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 2.42.0.20240614
         COMPILER_PATH=D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/;D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/;D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/;D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/;D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/;D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.'
-        Linking C static library libcmTC_269e6.a
-        "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_269e6.dir\\cmake_clean_target.cmake
-        "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_269e6.dir\\link.txt --verbose=1
-        arm-none-eabi-ar qc libcmTC_269e6.a CMakeFiles/cmTC_269e6.dir/CMakeCCompilerABI.c.obj
-        "D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-ranlib.exe" libcmTC_269e6.a
-        mingw32-make[1]: Leaving directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7o2qq3'
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.'
+        Linking C static library libcmTC_79627.a
+        "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_79627.dir\\cmake_clean_target.cmake
+        "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_79627.dir\\link.txt --verbose=1
+        arm-none-eabi-ar qc libcmTC_79627.a CMakeFiles/cmTC_79627.dir/CMakeCCompilerABI.c.obj
+        "D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-ranlib.exe" libcmTC_79627.a
+        mingw32-make[1]: Leaving directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6xc73z'
         
       exitCode: 0
   -
@@ -221,13 +221,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7o2qq3']
+        ignore line: [Change Dir: 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6xc73z']
         ignore line: []
-        ignore line: [Run Build Command(s): "D:/CLion 2024.2.3/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_269e6/fast]
-        ignore line: [D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_269e6.dir\\build.make CMakeFiles/cmTC_269e6.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7o2qq3']
-        ignore line: [Building C object CMakeFiles/cmTC_269e6.dir/CMakeCCompilerABI.c.obj]
-        ignore line: ["D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.obj -c "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "D:/CLion 2024.2.3/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_79627/fast]
+        ignore line: [D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_79627.dir\\build.make CMakeFiles/cmTC_79627.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6xc73z']
+        ignore line: [Building C object CMakeFiles/cmTC_79627.dir/CMakeCCompilerABI.c.obj]
+        ignore line: ["D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.obj -c "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-gcc.exe]
         ignore line: [Target: arm-none-eabi]
@@ -235,8 +235,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.3.1 20240614 (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_269e6.dir\\']
-        ignore line: [ D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/cc1.exe -quiet -v -iprefix D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/ -isysroot D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi -D__USES_INITFINI__ D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_269e6.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\w1445\\AppData\\Local\\Temp\\ccrWjnSA.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_79627.dir\\']
+        ignore line: [ D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/cc1.exe -quiet -v -iprefix D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/ -isysroot D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi -D__USES_INITFINI__ D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_79627.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\w1445\\AppData\\Local\\Temp\\cc5UkaYu.s]
         ignore line: [GNU C17 (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) version 13.3.1 20240614 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 9.3-win32 20200320  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -253,8 +253,8 @@ events:
         ignore line: [ D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: d51ba7f24bad5b83998bb941572c85c4]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_269e6.dir\\']
-        ignore line: [ D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.obj C:\\Users\\w1445\\AppData\\Local\\Temp\\ccrWjnSA.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_79627.dir\\']
+        ignore line: [ D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.obj C:\\Users\\w1445\\AppData\\Local\\Temp\\cc5UkaYu.s]
         ignore line: [GNU assembler version 2.42.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 2.42.0.20240614]
         ignore line: [COMPILER_PATH=D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/]
         ignore line: [D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/]
@@ -263,13 +263,13 @@ events:
         ignore line: [D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/]
         ignore line: [D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_269e6.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C static library libcmTC_269e6.a]
-        ignore line: ["D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_269e6.dir\\cmake_clean_target.cmake]
-        ignore line: ["D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_269e6.dir\\link.txt --verbose=1]
-        ignore line: [arm-none-eabi-ar qc libcmTC_269e6.a CMakeFiles/cmTC_269e6.dir/CMakeCCompilerABI.c.obj]
-        ignore line: ["D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-ranlib.exe" libcmTC_269e6.a]
-        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7o2qq3']
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_79627.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C static library libcmTC_79627.a]
+        ignore line: ["D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_79627.dir\\cmake_clean_target.cmake]
+        ignore line: ["D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_79627.dir\\link.txt --verbose=1]
+        ignore line: [arm-none-eabi-ar qc libcmTC_79627.a CMakeFiles/cmTC_79627.dir/CMakeCCompilerABI.c.obj]
+        ignore line: ["D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-ranlib.exe" libcmTC_79627.a]
+        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6xc73z']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -287,8 +287,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nubk40"
-      binary: "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nubk40"
+      source: "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-katk5i"
+      binary: "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-katk5i"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -298,13 +298,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nubk40'
+        Change Dir: 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-katk5i'
         
-        Run Build Command(s): "D:/CLion 2024.2.3/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_b2252/fast
-        D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b2252.dir\\build.make CMakeFiles/cmTC_b2252.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nubk40'
-        Building CXX object CMakeFiles/cmTC_b2252.dir/CMakeCXXCompilerABI.cpp.obj
-        "D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.obj -c "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "D:/CLion 2024.2.3/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_b4e3c/fast
+        D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b4e3c.dir\\build.make CMakeFiles/cmTC_b4e3c.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-katk5i'
+        Building CXX object CMakeFiles/cmTC_b4e3c.dir/CMakeCXXCompilerABI.cpp.obj
+        "D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.obj -c "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-g++.exe
         Target: arm-none-eabi
@@ -312,8 +312,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 13.3.1 20240614 (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b2252.dir\\'
-         D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/cc1plus.exe -quiet -v -iprefix D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/ -isysroot D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi -D__USES_INITFINI__ D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_b2252.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\w1445\\AppData\\Local\\Temp\\cc3lqod3.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b4e3c.dir\\'
+         D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/cc1plus.exe -quiet -v -iprefix D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/ -isysroot D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi -D__USES_INITFINI__ D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_b4e3c.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\w1445\\AppData\\Local\\Temp\\ccbIPBAa.s
         GNU C++17 (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) version 13.3.1 20240614 (arm-none-eabi)
         	compiled by GNU C version 9.3-win32 20200320, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -336,18 +336,18 @@ events:
          D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 056642460f9d295d75af1469d5c76882
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b2252.dir\\'
-         D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\w1445\\AppData\\Local\\Temp\\cc3lqod3.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b4e3c.dir\\'
+         D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\w1445\\AppData\\Local\\Temp\\ccbIPBAa.s
         GNU assembler version 2.42.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 2.42.0.20240614
         COMPILER_PATH=D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/;D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/;D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/;D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/;D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/;D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX static library libcmTC_b2252.a
-        "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_b2252.dir\\cmake_clean_target.cmake
-        "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b2252.dir\\link.txt --verbose=1
-        arm-none-eabi-ar qc libcmTC_b2252.a CMakeFiles/cmTC_b2252.dir/CMakeCXXCompilerABI.cpp.obj
-        "D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-ranlib.exe" libcmTC_b2252.a
-        mingw32-make[1]: Leaving directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nubk40'
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX static library libcmTC_b4e3c.a
+        "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_b4e3c.dir\\cmake_clean_target.cmake
+        "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b4e3c.dir\\link.txt --verbose=1
+        arm-none-eabi-ar qc libcmTC_b4e3c.a CMakeFiles/cmTC_b4e3c.dir/CMakeCXXCompilerABI.cpp.obj
+        "D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-ranlib.exe" libcmTC_b4e3c.a
+        mingw32-make[1]: Leaving directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-katk5i'
         
       exitCode: 0
   -
@@ -386,13 +386,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nubk40']
+        ignore line: [Change Dir: 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-katk5i']
         ignore line: []
-        ignore line: [Run Build Command(s): "D:/CLion 2024.2.3/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_b2252/fast]
-        ignore line: [D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b2252.dir\\build.make CMakeFiles/cmTC_b2252.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nubk40']
-        ignore line: [Building CXX object CMakeFiles/cmTC_b2252.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: ["D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.obj -c "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "D:/CLion 2024.2.3/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_b4e3c/fast]
+        ignore line: [D:/CLion 2024.2.3/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b4e3c.dir\\build.make CMakeFiles/cmTC_b4e3c.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-katk5i']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b4e3c.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: ["D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.obj -c "D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-g++.exe]
         ignore line: [Target: arm-none-eabi]
@@ -400,8 +400,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.3.1 20240614 (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b2252.dir\\']
-        ignore line: [ D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/cc1plus.exe -quiet -v -iprefix D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/ -isysroot D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi -D__USES_INITFINI__ D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_b2252.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\w1445\\AppData\\Local\\Temp\\cc3lqod3.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b4e3c.dir\\']
+        ignore line: [ D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/cc1plus.exe -quiet -v -iprefix D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/ -isysroot D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi -D__USES_INITFINI__ D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_b4e3c.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\w1445\\AppData\\Local\\Temp\\ccbIPBAa.s]
         ignore line: [GNU C++17 (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) version 13.3.1 20240614 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 9.3-win32 20200320  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -424,8 +424,8 @@ events:
         ignore line: [ D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 056642460f9d295d75af1469d5c76882]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b2252.dir\\']
-        ignore line: [ D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\w1445\\AppData\\Local\\Temp\\cc3lqod3.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b4e3c.dir\\']
+        ignore line: [ D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\w1445\\AppData\\Local\\Temp\\ccbIPBAa.s]
         ignore line: [GNU assembler version 2.42.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 2.42.0.20240614]
         ignore line: [COMPILER_PATH=D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/arm-none-eabi/13.3.1/]
         ignore line: [D:/arm-none-eabi/13.3 rel1/bin/../libexec/gcc/]
@@ -434,13 +434,13 @@ events:
         ignore line: [D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/]
         ignore line: [D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [D:/arm-none-eabi/13.3 rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b2252.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX static library libcmTC_b2252.a]
-        ignore line: ["D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_b2252.dir\\cmake_clean_target.cmake]
-        ignore line: ["D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b2252.dir\\link.txt --verbose=1]
-        ignore line: [arm-none-eabi-ar qc libcmTC_b2252.a CMakeFiles/cmTC_b2252.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: ["D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-ranlib.exe" libcmTC_b2252.a]
-        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nubk40']
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles\\cmTC_b4e3c.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX static library libcmTC_b4e3c.a]
+        ignore line: ["D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_b4e3c.dir\\cmake_clean_target.cmake]
+        ignore line: ["D:\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b4e3c.dir\\link.txt --verbose=1]
+        ignore line: [arm-none-eabi-ar qc libcmTC_b4e3c.a CMakeFiles/cmTC_b4e3c.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: ["D:\\arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-ranlib.exe" libcmTC_b4e3c.a]
+        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-katk5i']
         ignore line: []
         ignore line: []
         implicit libs: []

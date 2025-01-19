@@ -928,6 +928,126 @@ Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s
 .PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s
 
+User/Algorithm/Filter.obj: User/Algorithm/Filter.c.obj
+.PHONY : User/Algorithm/Filter.obj
+
+# target to build an object file
+User/Algorithm/Filter.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.obj
+.PHONY : User/Algorithm/Filter.c.obj
+
+User/Algorithm/Filter.i: User/Algorithm/Filter.c.i
+.PHONY : User/Algorithm/Filter.i
+
+# target to preprocess a source file
+User/Algorithm/Filter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.i
+.PHONY : User/Algorithm/Filter.c.i
+
+User/Algorithm/Filter.s: User/Algorithm/Filter.c.s
+.PHONY : User/Algorithm/Filter.s
+
+# target to generate assembly for a file
+User/Algorithm/Filter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Filter.c.s
+.PHONY : User/Algorithm/Filter.c.s
+
+User/Algorithm/Kalman_filter.obj: User/Algorithm/Kalman_filter.c.obj
+.PHONY : User/Algorithm/Kalman_filter.obj
+
+# target to build an object file
+User/Algorithm/Kalman_filter.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.obj
+.PHONY : User/Algorithm/Kalman_filter.c.obj
+
+User/Algorithm/Kalman_filter.i: User/Algorithm/Kalman_filter.c.i
+.PHONY : User/Algorithm/Kalman_filter.i
+
+# target to preprocess a source file
+User/Algorithm/Kalman_filter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.i
+.PHONY : User/Algorithm/Kalman_filter.c.i
+
+User/Algorithm/Kalman_filter.s: User/Algorithm/Kalman_filter.c.s
+.PHONY : User/Algorithm/Kalman_filter.s
+
+# target to generate assembly for a file
+User/Algorithm/Kalman_filter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Kalman_filter.c.s
+.PHONY : User/Algorithm/Kalman_filter.c.s
+
+User/Algorithm/Pid.obj: User/Algorithm/Pid.c.obj
+.PHONY : User/Algorithm/Pid.obj
+
+# target to build an object file
+User/Algorithm/Pid.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.obj
+.PHONY : User/Algorithm/Pid.c.obj
+
+User/Algorithm/Pid.i: User/Algorithm/Pid.c.i
+.PHONY : User/Algorithm/Pid.i
+
+# target to preprocess a source file
+User/Algorithm/Pid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.i
+.PHONY : User/Algorithm/Pid.c.i
+
+User/Algorithm/Pid.s: User/Algorithm/Pid.c.s
+.PHONY : User/Algorithm/Pid.s
+
+# target to generate assembly for a file
+User/Algorithm/Pid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.s
+.PHONY : User/Algorithm/Pid.c.s
+
+User/Algorithm/VMC_calc.obj: User/Algorithm/VMC_calc.c.obj
+.PHONY : User/Algorithm/VMC_calc.obj
+
+# target to build an object file
+User/Algorithm/VMC_calc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.obj
+.PHONY : User/Algorithm/VMC_calc.c.obj
+
+User/Algorithm/VMC_calc.i: User/Algorithm/VMC_calc.c.i
+.PHONY : User/Algorithm/VMC_calc.i
+
+# target to preprocess a source file
+User/Algorithm/VMC_calc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.i
+.PHONY : User/Algorithm/VMC_calc.c.i
+
+User/Algorithm/VMC_calc.s: User/Algorithm/VMC_calc.c.s
+.PHONY : User/Algorithm/VMC_calc.s
+
+# target to generate assembly for a file
+User/Algorithm/VMC_calc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.s
+.PHONY : User/Algorithm/VMC_calc.c.s
+
+User/App/Chassis_L.obj: User/App/Chassis_L.c.obj
+.PHONY : User/App/Chassis_L.obj
+
+# target to build an object file
+User/App/Chassis_L.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj
+.PHONY : User/App/Chassis_L.c.obj
+
+User/App/Chassis_L.i: User/App/Chassis_L.c.i
+.PHONY : User/App/Chassis_L.i
+
+# target to preprocess a source file
+User/App/Chassis_L.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.i
+.PHONY : User/App/Chassis_L.c.i
+
+User/App/Chassis_L.s: User/App/Chassis_L.c.s
+.PHONY : User/App/Chassis_L.s
+
+# target to generate assembly for a file
+User/App/Chassis_L.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.s
+.PHONY : User/App/Chassis_L.c.s
+
 User/App/Chassis_R.obj: User/App/Chassis_R.c.obj
 .PHONY : User/App/Chassis_R.obj
 
@@ -1023,6 +1143,30 @@ User/App/ELRS_task.s: User/App/ELRS_task.c.s
 User/App/ELRS_task.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.s
 .PHONY : User/App/ELRS_task.c.s
+
+User/App/Facial_expression.obj: User/App/Facial_expression.c.obj
+.PHONY : User/App/Facial_expression.obj
+
+# target to build an object file
+User/App/Facial_expression.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
+.PHONY : User/App/Facial_expression.c.obj
+
+User/App/Facial_expression.i: User/App/Facial_expression.c.i
+.PHONY : User/App/Facial_expression.i
+
+# target to preprocess a source file
+User/App/Facial_expression.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.i
+.PHONY : User/App/Facial_expression.c.i
+
+User/App/Facial_expression.s: User/App/Facial_expression.c.s
+.PHONY : User/App/Facial_expression.s
+
+# target to generate assembly for a file
+User/App/Facial_expression.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.s
+.PHONY : User/App/Facial_expression.c.s
 
 User/App/Hardware_Config.obj: User/App/Hardware_Config.c.obj
 .PHONY : User/App/Hardware_Config.obj
@@ -1301,6 +1445,21 @@ help:
 	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.obj
 	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.i
 	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.s
+	@echo ... User/Algorithm/Filter.obj
+	@echo ... User/Algorithm/Filter.i
+	@echo ... User/Algorithm/Filter.s
+	@echo ... User/Algorithm/Kalman_filter.obj
+	@echo ... User/Algorithm/Kalman_filter.i
+	@echo ... User/Algorithm/Kalman_filter.s
+	@echo ... User/Algorithm/Pid.obj
+	@echo ... User/Algorithm/Pid.i
+	@echo ... User/Algorithm/Pid.s
+	@echo ... User/Algorithm/VMC_calc.obj
+	@echo ... User/Algorithm/VMC_calc.i
+	@echo ... User/Algorithm/VMC_calc.s
+	@echo ... User/App/Chassis_L.obj
+	@echo ... User/App/Chassis_L.i
+	@echo ... User/App/Chassis_L.s
 	@echo ... User/App/Chassis_R.obj
 	@echo ... User/App/Chassis_R.i
 	@echo ... User/App/Chassis_R.s
@@ -1313,6 +1472,9 @@ help:
 	@echo ... User/App/ELRS_task.obj
 	@echo ... User/App/ELRS_task.i
 	@echo ... User/App/ELRS_task.s
+	@echo ... User/App/Facial_expression.obj
+	@echo ... User/App/Facial_expression.i
+	@echo ... User/App/Facial_expression.s
 	@echo ... User/App/Hardware_Config.obj
 	@echo ... User/App/Hardware_Config.i
 	@echo ... User/App/Hardware_Config.s

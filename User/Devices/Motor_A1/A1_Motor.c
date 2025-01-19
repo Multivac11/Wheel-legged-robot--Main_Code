@@ -23,6 +23,7 @@ extern DMA_HandleTypeDef hdma_uart9_rx;
   *                                   正面
   *     ID:1 usart3  A1_Motor_left_1        ID:2 usart4  A1_Motor_right_1
   *
+  *  CAN1                                                               CAN2
   *
   *     ID:0 usart9  A1_Motor_left_2       ID:1 usart7   A1_Motor_right_2
   *

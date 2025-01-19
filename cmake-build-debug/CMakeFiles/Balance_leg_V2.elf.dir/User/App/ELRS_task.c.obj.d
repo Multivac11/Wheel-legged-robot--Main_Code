@@ -66,4 +66,6 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj: \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\HI91/CH010_HI91.h \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Chassis_R.h \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Devices\Dji_motor/Motor_Dji.h \
- C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\BSP/can_bsp.h
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\BSP/can_bsp.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm/pid.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm/VMC_calc.h

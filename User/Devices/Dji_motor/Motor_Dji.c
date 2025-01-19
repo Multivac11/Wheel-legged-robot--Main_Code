@@ -21,14 +21,14 @@ uint8_t Motor3508_update_data(MotorData* motor, uint8_t *rxBuffer)
     return 0;
 }
 
-void set_moto_current(hcan_t* hcan,uint16_t motor_id,int16_t iq1,int16_t iq2){
+void Set_moto_current(hcan_t* hcan,uint16_t motor_id,int16_t iq1){
 
     uint8_t data[8];
 
     data[0] = (iq1 >> 8);
     data[1] = iq1;
-    data[2] = (iq2 >> 8);
-    data[3] = iq2;
+    data[2] = 0;
+    data[3] = 0;
     data[4] = 0;
     data[5] = 0;
     data[6] = 0;

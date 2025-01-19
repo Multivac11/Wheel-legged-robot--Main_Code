@@ -61,6 +61,6 @@ typedef struct
   * @brief  电机数据更新回调函数，只在motor.c文件内调用。（大疆电机反馈报文格式相同）
   */
 uint8_t Motor3508_update_data(MotorData* motor, uint8_t *rxBuffer);
-void set_moto_current(hcan_t* hcan,uint16_t motor_id,int16_t iq1,int16_t iq2);
+void Set_moto_current(hcan_t* hcan,uint16_t motor_id,int16_t iq1);
 
 #endif //BALANCE_LEG_V2_MOTOR_DJI_H

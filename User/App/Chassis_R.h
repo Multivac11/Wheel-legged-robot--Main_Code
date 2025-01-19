@@ -7,6 +7,9 @@
 
 #include "main.h"
 #include "Motor_Dji.h"
+#include "main.h"
+#include "pid.h"
+#include "VMC_calc.h"
 
 typedef struct
 {
@@ -68,6 +71,12 @@ typedef struct
 
 } chassis_t;
 
+void ChassisR_init(chassis_t *chassis,vmc_leg_t *vmc);
+void ChassisR_task(void);
+
 extern chassis_t chassis_move;
+extern vmc_leg_t right;
+extern uint8_t right_flag;
+extern double Poly_Coefficient[12][4];
 
 #endif //BALANCE_LEG_V2_CHASSIS_R_H
