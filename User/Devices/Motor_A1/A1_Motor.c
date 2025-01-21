@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "usart.h"
 
-#define PI 3.1415926535f
+
 
 uint8_t A1MotorA1_recv_date[A1_Motor_num][A1_Motor_Recv_Len]; // 接收数据缓存区
 uint8_t A1MotorA1_send_date[A1_Motor_num][A1_Motor_Send_Len]; // 发送数据
@@ -199,7 +199,7 @@ void A1_Motor_Recv_Cmd(motor_recv_t *recv,uint8_t motor)
     recv->Temp = recv->motor_recv_data.Mdata.Temp;
     recv->MError = recv->motor_recv_data.Mdata.MError;
     recv->T = ((float)recv->motor_recv_data.Mdata.T / 256.0f)*9.1f;                           //减速后的扭矩
-    recv->Pos = ((float)(recv->motor_recv_data.Mdata.Pos / (16384.0f/2/PI)))*(180/PI/9.1f);   //减速后的角度
+    recv->original_Pos = ((float)(recv->motor_recv_data.Mdata.Pos / (16384.0f/2/PI)))*(180/PI/9.1f);   //减速后的角度
     recv->W = ((float)recv->motor_recv_data.Mdata.W / 128.0f)/9.1f;                           //减速后的角速度
     recv->Acc = recv->motor_recv_data.Mdata.Acc;
     recv->Rx_count ++;

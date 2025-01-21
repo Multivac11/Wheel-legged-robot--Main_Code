@@ -21,8 +21,8 @@ void VMC_calc_1_right(vmc_leg_t *vmc,HI91_T *hi91,float dt)//计算theta和d_the
     static float PithGyroR=0.0f;
 
     //角度极性需要测试修改
-    PitchR = hi91->pitch;
-    PithGyroR = hi91->gyr[0];
+    PitchR = (hi91->pitch) * (PI/180);
+    PithGyroR = (hi91->gyr[0]) * (PI/180);
 
     vmc->YD = vmc->l4*arm_sin_f32(vmc->phi4);//D的y坐标
     vmc->YB = vmc->l1*arm_sin_f32(vmc->phi1);//B的y坐标
@@ -76,8 +76,8 @@ void VMC_calc_1_left(vmc_leg_t *vmc,HI91_T *hi91,float dt)//计算theta和d_thet
     static float PitchL=0.0f;
     static float PithGyroL=0.0f;
     //角度极性需要测试修改
-    PitchL=0.0f-hi91->pitch;
-    PithGyroL=0.0f-hi91->gyr[0];
+    PitchL=0.0f - (hi91->pitch) * (PI/180);
+    PithGyroL=0.0f - (hi91->gyr[0]) * (PI/180);
 
     vmc->YD = vmc->l4*arm_sin_f32(vmc->phi4);//D的y坐标
     vmc->YB = vmc->l1*arm_sin_f32(vmc->phi1);//B的y坐标

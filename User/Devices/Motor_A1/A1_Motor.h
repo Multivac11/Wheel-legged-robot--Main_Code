@@ -8,6 +8,8 @@
 #include "motor_msg.h"
 #include "usart.h"
 
+#define PI 3.1415926535f
+
 extern unitree_motor_t A1_Motor[4];
 #define  A1_Motor_left_1    0
 #define  A1_Motor_left_2    1

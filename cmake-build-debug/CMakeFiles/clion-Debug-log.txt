@@ -1,18 +1,4 @@
 "D:\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2 -B C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug
--- The C compiler identification is GNU 13.3.1
--- The CXX compiler identification is GNU 13.3.1
--- The ASM compiler identification is GNU
--- Found assembler: D:/arm-none-eabi/13.3 rel1/bin/arm-none-eabi-gcc.exe
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: D:/arm-none-eabi/13.3 rel1/bin/arm-none-eabi-gcc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: D:/arm-none-eabi/13.3 rel1/bin/arm-none-eabi-g++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Minimal optimization, debug info included
 [Include] C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User
 [Include] C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Algorithm
@@ -23,6 +9,6 @@
 [Include] C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/ELRS_Control
 [Include] C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/HI91
 [Include] C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/Motor_A1
--- Configuring done (4.8s)
+-- Configuring done (0.0s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug

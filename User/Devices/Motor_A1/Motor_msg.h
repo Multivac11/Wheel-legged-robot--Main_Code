@@ -178,7 +178,7 @@ typedef struct
 
     float T;                // 2Byte 当前实际电机输出力矩
     float W;                // 2Byte 当前实际电机速度（高速）
-    float Pos;              // 4Byte 当前电机位置
+    float original_Pos;              // 4Byte 当前电机位置
     float LW;               // 4Byte 当前实际电机速度（低速）
     int Acc;                // 2Byte 电机转子加速度
 

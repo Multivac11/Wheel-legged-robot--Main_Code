@@ -11,6 +11,7 @@
 #include "pid.h"
 #include "VMC_calc.h"
 
+
 typedef struct
 {
     MotorData para;
@@ -73,6 +74,8 @@ typedef struct
 
 void ChassisR_init(chassis_t *chassis,vmc_leg_t *vmc);
 void ChassisR_task(void);
+void chassisR_feedback_update(chassis_t *chassis,vmc_leg_t *vmc);
+void chassisR_control(chassis_t *chassis,vmc_leg_t *vmcr,HI91_T *hi91,double *LQR_K,BasePID_Object Tp_pid,BasePID_Object Turn_pid,BasePID_Object LegR_pid,BasePID_Object RollR_Pid);
 
 extern chassis_t chassis_move;
 extern vmc_leg_t right;

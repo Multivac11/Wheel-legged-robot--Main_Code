@@ -46,8 +46,11 @@ void HI91_UARTE_RxCallback(uint16_t Size)
         hi91_data.acc[0]  = hexToFloat(hi91_data_temp[18] + (hi91_data_temp[19] << 8) + (hi91_data_temp[20] << 16) + (hi91_data_temp[21] << 24));
         hi91_data.acc[1]  = hexToFloat(hi91_data_temp[22] + (hi91_data_temp[23] << 8) + (hi91_data_temp[24] << 16) + (hi91_data_temp[25] << 24));
         hi91_data.acc[2]  = hexToFloat(hi91_data_temp[26] + (hi91_data_temp[27] << 8) + (hi91_data_temp[28] << 16) + (hi91_data_temp[29] << 24));
+        //pitch角速度dps
         hi91_data.gyr[0]  = hexToFloat(hi91_data_temp[30] + (hi91_data_temp[31] << 8) + (hi91_data_temp[32] << 16) + (hi91_data_temp[33] << 24));
+        //rol角速度dps
         hi91_data.gyr[1]  = hexToFloat(hi91_data_temp[34] + (hi91_data_temp[35] << 8) + (hi91_data_temp[36] << 16) + (hi91_data_temp[37] << 24));
+        //yaw角速度dps
         hi91_data.gyr[2]  = hexToFloat(hi91_data_temp[38] + (hi91_data_temp[39] << 8) + (hi91_data_temp[40] << 16) + (hi91_data_temp[41] << 24));
         hi91_data.mag[0]  = hexToFloat(hi91_data_temp[42] + (hi91_data_temp[43] << 8) + (hi91_data_temp[44] << 16) + (hi91_data_temp[45] << 24));
         hi91_data.mag[1]  = hexToFloat(hi91_data_temp[46] + (hi91_data_temp[47] << 8) + (hi91_data_temp[48] << 16) + (hi91_data_temp[49] << 24));

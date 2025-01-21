@@ -15,7 +15,7 @@
 #include "Chassis_R.h"
 #include "Chassis_L.h"
 #include "Facial_expression.h"
-
+#include "VMC_calc.h"
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {

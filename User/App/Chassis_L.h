@@ -12,6 +12,8 @@
 
 void ChassisL_init(chassis_t *chassis,vmc_leg_t *vmc);
 void ChassisL_task(void);
+void chassisL_feedback_update(chassis_t *chassis,vmc_leg_t *vmc);
+void chassisL_control(chassis_t *chassis,vmc_leg_t *vmcl,HI91_T *hi91,double *LQR_K,BasePID_Object LegL_pid);
 
 extern vmc_leg_t left;
 extern uint8_t left_flag;

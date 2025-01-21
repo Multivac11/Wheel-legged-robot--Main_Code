@@ -13,7 +13,7 @@ typedef struct
 {
     /*左右两腿的公共参数，固定不变*/
     float l5;//AE长度 //单位为m
-    float	l1;//单位为m
+    float l1;//单位为m
     float l2;//单位为m
     float l3;//单位为m
     float l4;//单位为m
@@ -26,7 +26,7 @@ typedef struct
     float alpha;
     float d_alpha;
 
-    float	lBD;//BD两点的距离
+    float lBD;//BD两点的距离
 
     float d_phi0;//现在C点角度phi0的变换率
     float last_phi0;//上一次C点角度，用于计算角度phi0的变换率d_phi0
