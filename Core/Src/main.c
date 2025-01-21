@@ -137,7 +137,8 @@ int main(void)
 //      printf("%f,%f,%f\n", A1_Motor[1].motor_recv.Pos,A1_Motor[0].motor_recv.W,A1_Motor[1].motor_recv.W);
 //      printf("%d,%d,%d,%d,%d\n", A1_Motor[A1_Motor_left_1].motor_recv.FPS,A1_Motor[A1_Motor_left_2].motor_recv.FPS,A1_Motor[A1_Motor_right_1].motor_recv.FPS,A1_Motor[A1_Motor_right_2].motor_recv.FPS,hi91_data.FPS);
 //      printf("%f\n",A1_Motor[A1_Motor_left_2].motor_recv.original_Pos);
-      printf("%f,%f,%f,%f\n",right.L0,right.phi0*180/PI,left.L0,left.phi0*180/PI);
+//      printf("%f,%f,%f,%f\n",right.L0,right.phi0*180/PI,left.L0,left.phi0*180/PI);
+      printf("%f,%f\n",right.theta*180/PI,left.theta*180/PI);
       HAL_Delay(10);
     /* USER CODE END WHILE */
 

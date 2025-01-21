@@ -69,4 +69,15 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj: \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\BSP/can_bsp.h \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm/pid.h \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm/VMC_calc.h \
- C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Core\Inc/fdcan.h
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Core\Inc/fdcan.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Drivers\CMSIS\Include/cmsis_compiler.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/string.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/sys/_locale.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/strings.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/sys/string.h \
+ D:/arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/float.h \
+ D:/arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/limits.h \
+ D:/arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/syslimits.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/limits.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/sys/syslimits.h

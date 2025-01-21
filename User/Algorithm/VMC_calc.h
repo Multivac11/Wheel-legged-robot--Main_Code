@@ -66,6 +66,6 @@ extern void VMC_calc_2(vmc_leg_t *vmc);//计算期望的关节输出力矩
 extern uint8_t ground_detectionR(vmc_leg_t *vmc);//右腿离地检测
 extern uint8_t ground_detectionL(vmc_leg_t *vmc);//左腿离地检测
 
-extern float LQR_K_calc(float *coe,float len);
+extern float LQR_K_calc(double *coe,float len);
 
 #endif //BALANCE_LEG_V2_VMC_CALC_H
