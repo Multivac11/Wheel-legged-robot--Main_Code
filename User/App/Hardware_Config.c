@@ -16,6 +16,7 @@
 
 Clock task_clk;
 void HardwareConfig(void) {
+
     FDCAN1_Config();
     FDCAN2_Config();
     CH010_HI91_Init();

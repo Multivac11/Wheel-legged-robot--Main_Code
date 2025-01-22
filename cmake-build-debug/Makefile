@@ -1192,6 +1192,30 @@ User/App/Hardware_Config.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.s
 .PHONY : User/App/Hardware_Config.c.s
 
+User/App/Observe.obj: User/App/Observe.c.obj
+.PHONY : User/App/Observe.obj
+
+# target to build an object file
+User/App/Observe.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Observe.c.obj
+.PHONY : User/App/Observe.c.obj
+
+User/App/Observe.i: User/App/Observe.c.i
+.PHONY : User/App/Observe.i
+
+# target to preprocess a source file
+User/App/Observe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Observe.c.i
+.PHONY : User/App/Observe.c.i
+
+User/App/Observe.s: User/App/Observe.c.s
+.PHONY : User/App/Observe.s
+
+# target to generate assembly for a file
+User/App/Observe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Balance_leg_V2.elf.dir\build.make CMakeFiles/Balance_leg_V2.elf.dir/User/App/Observe.c.s
+.PHONY : User/App/Observe.c.s
+
 User/App/USART_Callback.obj: User/App/USART_Callback.c.obj
 .PHONY : User/App/USART_Callback.obj
 
@@ -1478,6 +1502,9 @@ help:
 	@echo ... User/App/Hardware_Config.obj
 	@echo ... User/App/Hardware_Config.i
 	@echo ... User/App/Hardware_Config.s
+	@echo ... User/App/Observe.obj
+	@echo ... User/App/Observe.i
+	@echo ... User/App/Observe.s
 	@echo ... User/App/USART_Callback.obj
 	@echo ... User/App/USART_Callback.i
 	@echo ... User/App/USART_Callback.s

@@ -16,6 +16,7 @@
 #include "Chassis_L.h"
 #include "Facial_expression.h"
 #include "VMC_calc.h"
+#include "observe.h"
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
@@ -29,10 +30,24 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
         ChassisR_task();
         ChassisL_task();
         Facial_expression_Control();
+        Observe_task();
 
         if(chassis_move.start_flag==1)
         {
+            Set_moto_current(&hfdcan1,0x200,chassis_move.wheel_motor[1].para.Output);
+            Set_moto_current(&hfdcan2,0x200,chassis_move.wheel_motor[0].para.Output);
 
+            Modfiy_Torque_Cmd(&A1_Motor[A1_Motor_left_1].motor_send,A1_Motor_left_1_ID, A1_Motor[A1_Motor_left_1].motor_send.T);
+            A1_Motor_Send_Cmd(&A1_Motor[A1_Motor_left_1].motor_send, A1_Motor_left_1);
+
+            Modfiy_Torque_Cmd(&A1_Motor[A1_Motor_left_2].motor_send,A1_Motor_left_2_ID, A1_Motor[A1_Motor_left_2].motor_send.T);
+            A1_Motor_Send_Cmd(&A1_Motor[A1_Motor_left_2].motor_send, A1_Motor_left_2);
+
+            Modfiy_Torque_Cmd(&A1_Motor[A1_Motor_right_1].motor_send,A1_Motor_right_1_ID, A1_Motor[A1_Motor_right_1].motor_send.T);
+            A1_Motor_Send_Cmd(&A1_Motor[A1_Motor_right_1].motor_send, A1_Motor_right_1);
+
+            Modfiy_Torque_Cmd(&A1_Motor[A1_Motor_right_2].motor_send,A1_Motor_right_2_ID, A1_Motor[A1_Motor_right_2].motor_send.T);
+            A1_Motor_Send_Cmd(&A1_Motor[A1_Motor_right_2].motor_send, A1_Motor_right_2);
         }
         else if(chassis_move.start_flag==0)
         {

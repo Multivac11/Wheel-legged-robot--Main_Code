@@ -4,6 +4,7 @@
 
 #include "Motor_Dji.h"
 #include "can_bsp.h"
+#include "A1_Motor.h"
 
 
 /**
@@ -17,6 +18,8 @@ uint8_t Motor3508_update_data(MotorData* motor, uint8_t *rxBuffer)
     motor->TorqueCurrent = rxBuffer[4]<<8|rxBuffer[5];
     motor->Temperature   = rxBuffer[6];
     motor->Ecd           = motor->RawEcd;
+
+    motor->AngleSpeed = (float)(motor->SpeedRPM * (PI/30));
 
     return 0;
 }

@@ -91,6 +91,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj.d"
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj"
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj.d"
+  "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Observe.c.obj"
+  "CMakeFiles/Balance_leg_V2.elf.dir/User/App/Observe.c.obj.d"
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj"
   "CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj.d"
   "CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj"

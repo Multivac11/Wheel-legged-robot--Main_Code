@@ -136,9 +136,9 @@ int main(void)
 //      elrs_data.C,elrs_data.D,elrs_data.E,elrs_data.F,elrs_data.S1,elrs_data.S2,elrs_data.isOnline);
 //      printf("%f,%f,%f\n", A1_Motor[1].motor_recv.Pos,A1_Motor[0].motor_recv.W,A1_Motor[1].motor_recv.W);
 //      printf("%d,%d,%d,%d,%d\n", A1_Motor[A1_Motor_left_1].motor_recv.FPS,A1_Motor[A1_Motor_left_2].motor_recv.FPS,A1_Motor[A1_Motor_right_1].motor_recv.FPS,A1_Motor[A1_Motor_right_2].motor_recv.FPS,hi91_data.FPS);
-//      printf("%f\n",A1_Motor[A1_Motor_left_2].motor_recv.original_Pos);
-//      printf("%f,%f,%f,%f\n",right.L0,right.phi0*180/PI,left.L0,left.phi0*180/PI);
-      printf("%f,%f\n",right.theta*180/PI,left.theta*180/PI);
+//      printf("%f,%f,%f,%f\n",A1_Motor[A1_Motor_left_1].motor_recv.original_Pos,A1_Motor[A1_Motor_left_2].motor_recv.original_Pos,A1_Motor[A1_Motor_right_1].motor_recv.original_Pos,A1_Motor[A1_Motor_right_2].motor_recv.original_Pos);
+      printf("%f,%f\n",chassis_move.myPithR*180/PI,chassis_move.myPithL*180/PI);
+//      printf("%f,%f,%f,%f,%f\n",chassis_move.wheel_motor[0].wheel_T,chassis_move.wheel_motor[1].wheel_T,right.torque_set[0],chassis_move.x_set,right.L0);
       HAL_Delay(10);
     /* USER CODE END WHILE */
 

@@ -28,18 +28,18 @@ double LQR_K_R[12]={
         3.1791,   0.3891  ,  1.5877  ,  1.4070  , 13.3789 ,   0.6359};
 
 double Poly_Coefficient[12][4]=   //效果不错，机体质量修改theta d_theta x d_x phi d_phi% 10 1 100 600 4000 1，R=[90 0;0 4];需测试
-        {	{25.619458010477,42.396401150756,-72.476541047373,2.345926412867},
-             {25.715938896762,-22.249423717269,-1.820207059297,0.180076150825},
-             {-12.834257750058,18.352541795795,-9.557593709352,0.894930546630},
-             {-34.709194760379,50.841110620271,-27.375667487440,2.526611959959},
-             {57.882746624998,-51.253238828278,10.950016401576,2.339295097909},
-             {9.162310084870,-8.703367625243,2.298425630998,0.304704208073},
-             {1161.545188428586,-1182.493763995611,377.929566650698,1.664709464268},
-             {65.838327029297,-90.485690315681,44.150387092779,-0.880742493056},
-             {93.991733827054,-78.325937051019,13.456026781740,4.345880965758},
-             {272.335962353670,-229.441507844338,41.232981985774,12.382452873473},
-             {132.507547546445,-207.801150976374,117.564155715659,-14.296416861098},
-             {10.451363931962,-22.388672153817,15.345175456254,-2.569217598217}
+        {	{-141.824157252045,191.647112634727,-110.284665289416,2.602097017937},
+             {10.664455150475,-6.791518729134,-6.715863685967,0.341284491490},
+             {-28.069323512165,29.696170429149,-11.179964116140,0.546342070993},
+             {-79.327888395276,84.400107608781,-32.394660650532,1.554008270861},
+             {68.284732823408,-31.229880788662,-13.518154282491,10.025824914629},
+             {10.664817460725,-7.355185077739,0.254703586649,0.937401211728},
+             {1082.300393193283,-961.774328112779,244.860267304993,11.936140040004},
+             {101.806076556086,-105.016819001327,36.691269031518,-0.103809505248},
+             {31.067798722415,-8.597698526192,-11.447771548010,6.019847394615},
+             {96.042251942091,-32.179263449200,-30.083006761711,17.187236393488},
+             {1033.937355730385,-1106.603672091139,424.120200487017,-25.429384761079},
+             {85.269752504488,-95.573307454835,39.041738292366,-3.861154312338}
         };
 
 vmc_leg_t right;
@@ -75,14 +75,14 @@ void ChassisR_task(void)
 
 void chassisR_feedback_update(chassis_t *chassis,vmc_leg_t *vmc)
 {
-    vmc->phi1 = (A1_Motor[A1_Motor_right_1].motor_recv.original_Pos + 197) * (PI/180);
-    vmc->phi4 = (A1_Motor[A1_Motor_right_2].motor_recv.original_Pos - 65) * (PI/180);
+    vmc->phi1 = ((A1_Motor[A1_Motor_right_1].motor_recv.original_Pos + 197) * PI/180);
+    vmc->phi4 = ((A1_Motor[A1_Motor_right_2].motor_recv.original_Pos - 65) * PI/180);
 
-    chassis->myPithR = hi91_data.pitch * (PI/180);
-    chassis->myPithGyroR = hi91_data.gyr[0] * (PI/180);
+    chassis->myPithR = (hi91_data.pitch * PI/180);
+    chassis->myPithGyroR = (hi91_data.gyr[0] * PI/180);
 
-    chassis->total_yaw = hi91_data.yaw * (PI/180);
-    chassis->roll = hi91_data.roll * (PI/180);
+    chassis->total_yaw = (hi91_data.yaw * PI/180);
+    chassis->roll = (hi91_data.roll * PI/180);
     chassis->theta_err=0.0f-(vmc->theta+left.theta);
 }
 
@@ -114,12 +114,12 @@ void chassisR_control(chassis_t *chassis,vmc_leg_t *vmcr,HI91_T *hi91,double *LQ
                       +LQR_K[10]*(chassis->myPithR-0.0f)
                       +LQR_K[11]*(chassis->myPithGyroR-0.0f));
 
-    vmcr->Tp=vmcr->Tp+chassis->leg_tp;//髋关节输出力矩
+    vmcr->Tp = vmcr->Tp+chassis->leg_tp;//髋关节输出力矩
 
     chassis->now_roll_set = BasePID_PositionControl(&RollR_Pid,chassis->roll_set,chassis->roll);
 
-    //	vmcr->F0=13.0f+BasePID_PositionControl(&LegR_pid, chassis->leg_set_R , vmcr->L0);//前馈+pd
-    vmcr->F0=Mg/arm_cos_f32(vmcr->theta) + BasePID_PositionControl(&LegR_pid, chassis->leg_set_R , vmcr->L0)-chassis->now_roll_set;
+//    vmcr->F0 = Mg+BasePID_PositionControl(&LegR_pid, chassis->leg_set_R , vmcr->L0);//前馈+pd
+    vmcr->F0 = Mg/arm_cos_f32(vmcr->theta) + BasePID_PositionControl(&LegR_pid, chassis->leg_set_R , vmcr->L0)-chassis->now_roll_set;
 
     right_flag = ground_detectionR(vmcr);//右腿离地检测
 
@@ -150,14 +150,32 @@ void chassisR_control(chassis_t *chassis,vmc_leg_t *vmcr,HI91_T *hi91,double *LQ
     VMC_calc_2(vmcr);//计算期望的关节输出力矩
 
     chassis->wheel_motor[0].wheel_T = chassis->wheel_motor[0].wheel_T-chassis->turn_T;	//轮毂电机输出力矩
-    chassis->wheel_motor[0].para.Output = (int32_t )chassis->wheel_motor[0].wheel_T * (661504/201);
+    chassis->wheel_motor[0].para.Output = (int16_t)(-chassis->wheel_motor[0].wheel_T * 661504/201);
 
     mySaturate_i(&chassis->wheel_motor[0].para.Output,-16384,+16384);
 
-    A1_Motor[A1_Motor_right_1].motor_send.T = vmcr->torque_set[0]/9.1f;
-    A1_Motor[A1_Motor_right_2].motor_send.T = vmcr->torque_set[1]/9.1f;
-    mySaturate_f(&A1_Motor[A1_Motor_right_1].motor_send.T,-4.0f,4.0f);
-    mySaturate_f(&A1_Motor[A1_Motor_right_2].motor_send.T,-4.0f,4.0f);
+    A1_Motor[A1_Motor_right_1].motor_send.T = vmcr->torque_set[0];
+    A1_Motor[A1_Motor_right_2].motor_send.T = vmcr->torque_set[1];
+
+    if(A1_Motor[A1_Motor_right_1].motor_send.T < -33.0f)
+    {
+        A1_Motor[A1_Motor_right_1].motor_send.T = -33.0f;
+    }
+    else if(A1_Motor[A1_Motor_right_1].motor_send.T > 33.0f)
+    {
+        A1_Motor[A1_Motor_right_1].motor_send.T = 33.0f;
+    }
+
+    if(A1_Motor[A1_Motor_right_2].motor_send.T < -33.0f)
+    {
+        A1_Motor[A1_Motor_right_2].motor_send.T = -33.0f;
+    }
+    else if(A1_Motor[A1_Motor_right_2].motor_send.T > 33.0f)
+    {
+        A1_Motor[A1_Motor_right_2].motor_send.T = 33.0f;
+    }
+//    mySaturate_f(&A1_Motor[A1_Motor_right_1].motor_send.T,-4.0f,+4.0f);
+//    mySaturate_f(&A1_Motor[A1_Motor_right_2].motor_send.T,-4.0f,+4.0f);
 }
 
 void mySaturate_f(float *in,float min,float max)
@@ -172,7 +190,7 @@ void mySaturate_f(float *in,float min,float max)
     }
 }
 
-void mySaturate_i(int32_t *in,int32_t min,int32_t max)
+void mySaturate_i(int16_t *in,int32_t min,int32_t max)
 {
     if(*in < min)
     {

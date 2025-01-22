@@ -10,5 +10,7 @@
 #include "Chassis_R.h"
 
 void ELRS_Task(ELRS_Data *elrs_data,chassis_t *chassis);
+void jump_key(ELRS_Data *Elrs_data,chassis_t *chassis);
+void slope_following(float *target,float *set,float acc);
 
 #endif //BALANCE_LEG_V2_ELRS_TASK_H

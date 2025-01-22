@@ -11,7 +11,7 @@
 #include "pid.h"
 #include "VMC_calc.h"
 
-#define Mg 95.0f
+#define Mg 70.0f
 
 typedef struct
 {
@@ -76,7 +76,7 @@ typedef struct
 void ChassisR_init(chassis_t *chassis,vmc_leg_t *vmc);
 void ChassisR_task(void);
 void mySaturate_f(float *in,float min,float max);
-void mySaturate_i(int32_t *in,int32_t min,int32_t max);
+void mySaturate_i(int16_t *in,int32_t min,int32_t max);
 void chassisR_feedback_update(chassis_t *chassis,vmc_leg_t *vmc);
 void chassisR_control(chassis_t *chassis,vmc_leg_t *vmcr,HI91_T *hi91,double *LQR_K,BasePID_Object Tp_pid,BasePID_Object Turn_pid,BasePID_Object LegR_pid,BasePID_Object RollR_Pid);
 

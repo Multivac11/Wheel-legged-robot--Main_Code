@@ -48,11 +48,11 @@ void ChassisL_task(void)
 
 void chassisL_feedback_update(chassis_t *chassis,vmc_leg_t *vmc)
 {
-    vmc->phi1 = (A1_Motor[A1_Motor_left_2].motor_recv.original_Pos + 195) * (PI/180);
-    vmc->phi4 = (A1_Motor[A1_Motor_left_1].motor_recv.original_Pos - 52) * (PI/180);
+    vmc->phi1 = ((A1_Motor[A1_Motor_left_2].motor_recv.original_Pos + 196) * PI/180);
+    vmc->phi4 = ((A1_Motor[A1_Motor_left_1].motor_recv.original_Pos - 60) * PI/180);
 
-    chassis->myPithL = 0.0f - hi91_data.pitch * (PI/180);
-    chassis->myPithGyroL = 0.0f - hi91_data.gyr[0] * (PI/180);
+    chassis->myPithL = (0.0f - hi91_data.pitch * PI/180);
+    chassis->myPithGyroL = (0.0f - hi91_data.gyr[0] * PI/180);
 }
 uint8_t  left_flag;
 void chassisL_control(chassis_t *chassis,vmc_leg_t *vmcl,HI91_T *hi91,double *LQR_K,BasePID_Object LegL_pid)
@@ -90,7 +90,7 @@ void chassisL_control(chassis_t *chassis,vmc_leg_t *vmcl,HI91_T *hi91,double *LQ
         if(left_flag==1&&right_flag==1&&vmcl->leg_flag==0)
         {//当两腿同时离地并且遥控器没有在控制腿的伸缩时，才认为离地
             chassis->wheel_motor[1].wheel_T=0.0f;
-            vmcl->Tp=LQR_K[6]*(vmcl->theta-0.0f)+ LQR_K[7]*(vmcl->d_theta-0.0f);
+            vmcl->Tp = (float)(LQR_K[6]*(vmcl->theta-0.0f)+ LQR_K[7]*(vmcl->d_theta-0.0f));
 
             chassis->x_filter=0.0f;//对位移清零
             chassis->x_set=chassis->x_filter;
@@ -112,12 +112,30 @@ void chassisL_control(chassis_t *chassis,vmc_leg_t *vmcl,HI91_T *hi91,double *LQ
     VMC_calc_2(vmcl);//计算期望的关节输出力矩
 
     chassis->wheel_motor[1].wheel_T = chassis->wheel_motor[1].wheel_T-chassis->turn_T;	//轮毂电机输出力矩
-    chassis->wheel_motor[1].para.Output = (int32_t )chassis->wheel_motor[1].wheel_T * (661504/201);
+    chassis->wheel_motor[1].para.Output = (int16_t )(-chassis->wheel_motor[1].wheel_T * 661504/201);
     mySaturate_i(&chassis->wheel_motor[1].para.Output,-16384,+16384);
 
-    A1_Motor[A1_Motor_left_1].motor_send.T = vmcl->torque_set[1]/9.1f;
-    A1_Motor[A1_Motor_left_2].motor_send.T = vmcl->torque_set[0]/9.1f;
-    mySaturate_f(&A1_Motor[A1_Motor_left_1].motor_send.T,-4.0f,4.0f);
-    mySaturate_f(&A1_Motor[A1_Motor_left_2].motor_send.T,-4.0f,4.0f);
+    A1_Motor[A1_Motor_left_1].motor_send.T = vmcl->torque_set[1];
+    A1_Motor[A1_Motor_left_2].motor_send.T = vmcl->torque_set[0];
+
+    if(A1_Motor[A1_Motor_left_1].motor_send.T < -33.0f)
+    {
+        A1_Motor[A1_Motor_left_1].motor_send.T = -33.0f;
+    }
+    else if(A1_Motor[A1_Motor_left_1].motor_send.T > 33.0f)
+    {
+        A1_Motor[A1_Motor_left_1].motor_send.T = 33.0f;
+    }
+
+    if(A1_Motor[A1_Motor_left_2].motor_send.T < -33.0f)
+    {
+        A1_Motor[A1_Motor_left_2].motor_send.T = -33.0f;
+    }
+    else if(A1_Motor[A1_Motor_left_2].motor_send.T > 33.0f)
+    {
+        A1_Motor[A1_Motor_left_2].motor_send.T = 33.0f;
+    }
+//    mySaturate_f(&A1_Motor[A1_Motor_left_1].motor_send.T,-4.0f,4.0f);
+//    mySaturate_f(&A1_Motor[A1_Motor_left_2].motor_send.T,-4.0f,4.0f);
 }
 

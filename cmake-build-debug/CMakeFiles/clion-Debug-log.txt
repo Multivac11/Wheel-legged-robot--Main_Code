@@ -9,6 +9,6 @@
 [Include] C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/ELRS_Control
 [Include] C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/HI91
 [Include] C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/Motor_A1
--- Configuring done (0.1s)
+-- Configuring done (0.0s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/cmake-build-debug

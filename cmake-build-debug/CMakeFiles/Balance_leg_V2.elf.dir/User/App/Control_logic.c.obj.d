@@ -75,4 +75,20 @@ CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj: \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm/pid.h \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm/VMC_calc.h \
  C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Chassis_L.h \
- C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Facial_expression.h
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\Facial_expression.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\App\observe.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Algorithm/kalman_filter.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
+ C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\Drivers\CMSIS\Include/cmsis_compiler.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/string.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/sys/_locale.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/strings.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/sys/string.h \
+ D:/arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/float.h \
+ D:/arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/limits.h \
+ D:/arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/syslimits.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/limits.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/sys/syslimits.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/stdlib.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/machine/stdlib.h \
+ D:/arm-none-eabi/13.3\ rel1/arm-none-eabi/include/alloca.h
