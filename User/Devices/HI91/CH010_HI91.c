@@ -18,7 +18,7 @@ float hexToFloat(uint32_t hexValue)
 HI91_T hi91_data;
 static void hipnuc_crc16(uint16_t *inital, const uint8_t *buf, uint32_t len);
 extern DMA_HandleTypeDef hdma_usart2_rx;
-uint8_t hi91_data_temp[82] = {0};
+__attribute__((section("._D1_Area"))) uint8_t hi91_data_temp[82] = {0};
 void CH010_HI91_Init(void)
 {
     HAL_UARTEx_ReceiveToIdle_DMA(&huart2, hi91_data_temp, 82); // 启用空闲中断接收

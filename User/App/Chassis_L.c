@@ -49,7 +49,7 @@ void ChassisL_task(void)
 void chassisL_feedback_update(chassis_t *chassis,vmc_leg_t *vmc)
 {
     vmc->phi1 = ((A1_Motor[A1_Motor_left_2].motor_recv.original_Pos + 196) * PI/180);
-    vmc->phi4 = ((A1_Motor[A1_Motor_left_1].motor_recv.original_Pos - 60) * PI/180);
+    vmc->phi4 = ((A1_Motor[A1_Motor_left_1].motor_recv.original_Pos - 50) * PI/180);
 
     chassis->myPithL = (0.0f - hi91_data.pitch * PI/180);
     chassis->myPithGyroL = (0.0f - hi91_data.gyr[0] * PI/180);

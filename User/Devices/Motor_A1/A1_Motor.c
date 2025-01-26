@@ -10,8 +10,8 @@
 
 
 
-uint8_t A1MotorA1_recv_date[A1_Motor_num][A1_Motor_Recv_Len]; // 接收数据缓存区
-uint8_t A1MotorA1_send_date[A1_Motor_num][A1_Motor_Send_Len]; // 发送数据
+__attribute__((section("._D1_Area"))) uint8_t A1MotorA1_recv_date[A1_Motor_num][A1_Motor_Recv_Len]; // 接收数据缓存区
+__attribute__((section("._D1_Area"))) uint8_t A1MotorA1_send_date[A1_Motor_num][A1_Motor_Send_Len]; // 发送数据
 unitree_motor_t A1_Motor[A1_Motor_num];
 extern DMA_HandleTypeDef hdma_usart3_rx;
 extern DMA_HandleTypeDef hdma_uart4_rx;

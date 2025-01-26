@@ -42,7 +42,7 @@ float float_Map_with_median(float input_value, float input_min, float input_max,
 }
 extern DMA_HandleTypeDef hdma_usart10_rx;
 
-uint8_t elrs_data_temp[36] = {0};
+__attribute__((section("._D1_Area"))) uint8_t elrs_data_temp[36] = {0};
 void ELRS_Init(void)
 {
     HAL_UARTEx_ReceiveToIdle_DMA(&huart10, elrs_data_temp, MAX_FRAME_SIZE); // 启用空闲中断接收

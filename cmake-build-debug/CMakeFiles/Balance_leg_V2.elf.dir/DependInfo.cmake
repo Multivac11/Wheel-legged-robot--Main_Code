@@ -39,6 +39,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/ELRS_Control"
   "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/HI91"
   "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/Motor_A1"
+  "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Lib"
   )
 
 # The set of dependency files which are needed:

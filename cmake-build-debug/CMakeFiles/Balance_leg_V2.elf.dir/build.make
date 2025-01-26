@@ -906,7 +906,7 @@ Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/build.make
-Balance_leg_V2.elf: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/Middlewares/ST/ARM/DSP/Lib/libarm_cortexM4lf_math.a
+Balance_leg_V2.elf: C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Lib/libarm_cortexM4lf_math.a
 Balance_leg_V2.elf: CMakeFiles/Balance_leg_V2.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Linking C executable Balance_leg_V2.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Balance_leg_V2.elf.dir\link.txt --verbose=$(VERBOSE)

@@ -219,6 +219,18 @@
 				"file" : 0,
 				"line" : 55,
 				"parent" : 31
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 33
 			}
 		]
 	},
@@ -363,6 +375,10 @@
 				{
 					"backtrace" : 32,
 					"path" : "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/Motor_A1"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Lib"
 				}
 			],
 			"language" : "C",
@@ -409,24 +425,24 @@
 				109,
 				110,
 				111,
-				166,
-				168,
-				170,
-				172,
-				174,
-				176,
-				178,
-				180,
-				182,
-				184,
-				186,
-				188,
-				190,
-				192,
-				194,
-				196,
-				198,
-				200
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				130,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				148
 			]
 		},
 		{
@@ -576,6 +592,10 @@
 				{
 					"backtrace" : 32,
 					"path" : "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Devices/Motor_A1"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Users/w1445/Desktop/Microcontroller_project/Balance_leg/Code/Balance_V2/Balance_leg_V2/User/Lib"
 				}
 			],
 			"language" : "ASM",
@@ -640,7 +660,7 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "C:\\Users\\w1445\\Desktop\\Microcontroller_project\\Balance_leg\\Code\\Balance_V2\\Balance_leg_V2\\Middlewares\\ST\\ARM\\DSP\\Lib\\libarm_cortexM4lf_math.a",
+				"fragment" : "C:\\Users\\w1445\\Desktop\\Microcontroller_project\\Balance_leg\\Code\\Balance_V2\\Balance_leg_V2\\User\\Lib\\libarm_cortexM4lf_math.a",
 				"role" : "libraries"
 			}
 		],
@@ -735,25 +755,25 @@
 				88,
 				89,
 				112,
-				167,
-				169,
-				171,
-				173,
-				175,
-				177,
-				179,
-				181,
-				183,
-				185,
-				187,
-				189,
-				191,
-				193,
-				195,
-				197,
-				199,
-				201,
-				202
+				115,
+				117,
+				119,
+				121,
+				123,
+				125,
+				127,
+				129,
+				131,
+				133,
+				135,
+				137,
+				139,
+				141,
+				143,
+				145,
+				147,
+				149,
+				150
 			]
 		},
 		{
@@ -793,24 +813,24 @@
 				109,
 				110,
 				111,
-				166,
-				168,
-				170,
-				172,
-				174,
-				176,
-				178,
-				180,
-				182,
-				184,
-				186,
-				188,
-				190,
-				192,
-				194,
-				196,
-				198,
-				200
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				130,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				148
 			]
 		},
 		{
@@ -822,43 +842,6 @@
 				50,
 				90,
 				113,
-				114,
-				115,
-				116,
-				117,
-				118,
-				119,
-				120,
-				121,
-				122,
-				123,
-				124,
-				125,
-				126,
-				127,
-				128,
-				129,
-				130,
-				131,
-				132,
-				133,
-				134,
-				135,
-				136,
-				137,
-				138,
-				139,
-				140,
-				141,
-				142,
-				143,
-				144,
-				145,
-				146,
-				147,
-				148,
-				149,
-				150,
 				151,
 				152,
 				153,
@@ -874,6 +857,43 @@
 				163,
 				164,
 				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
 				203
 			]
 		}
@@ -1481,266 +1501,6 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_ARMv8MBLl_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_ARMv8MMLl_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_ARMv8MMLld_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_ARMv8MMLldfsp_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_ARMv8MMLlfsp_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM0b_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM0l_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM3b_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM3l_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM4b_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM4bf_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM4l_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM4lf_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM7b_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM7bfdp_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM7bfsp_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM7l_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM7lfdp_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/arm_cortexM7lfsp_math.lib",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_ARMv8MBLl_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_ARMv8MMLl_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_ARMv8MMLld_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_ARMv8MMLldfdp_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_ARMv8MMLldfsp_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_ARMv8MMLlfdp_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_ARMv8MMLlfsp_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM0b_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM0l_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM3b_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM3l_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM4b_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM4bf_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM4l_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM4lf_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM7b_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM7bf_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM7bs_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM7l_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM7lf_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/iar_cortexM7ls_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_ARMv8MBLl_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_ARMv8MMLl_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_ARMv8MMLld_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_ARMv8MMLldfsp_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_ARMv8MMLlfsp_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_cortexM0l_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_cortexM3l_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_cortexM4l_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_cortexM4lf_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_cortexM7l_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_cortexM7lfdp_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Middlewares/ST/ARM/DSP/Lib/libarm_cortexM7lfsp_math.a",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
 			"path" : "Middlewares/Third_Party/ARM/DSP/LICENSE.txt",
 			"sourceGroupIndex" : 2
 		},
@@ -1946,6 +1706,266 @@
 			"backtrace" : 1,
 			"path" : "User/Devices/Motor_A1/Motor_msg.h",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_ARMv8MBLl_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_ARMv8MMLl_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_ARMv8MMLld_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_ARMv8MMLldfsp_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_ARMv8MMLlfsp_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM0b_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM0l_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM3b_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM3l_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM4b_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM4bf_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM4l_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM4lf_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM7b_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM7bfdp_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM7bfsp_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM7l_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM7lfdp_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/arm_cortexM7lfsp_math.lib",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_ARMv8MBLl_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_ARMv8MMLl_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_ARMv8MMLld_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_ARMv8MMLldfdp_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_ARMv8MMLldfsp_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_ARMv8MMLlfdp_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_ARMv8MMLlfsp_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM0b_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM0l_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM3b_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM3l_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM4b_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM4bf_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM4l_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM4lf_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM7b_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM7bf_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM7bs_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM7l_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM7lf_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/iar_cortexM7ls_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_ARMv8MBLl_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_ARMv8MMLl_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_ARMv8MMLld_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_ARMv8MMLldfsp_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_ARMv8MMLlfsp_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_cortexM0l_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_cortexM3l_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_cortexM4l_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_cortexM4lf_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_cortexM7l_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_cortexM7lfdp_math.a",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "User/Lib/libarm_cortexM7lfsp_math.a",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,

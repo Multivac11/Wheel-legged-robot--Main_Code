@@ -7,7 +7,7 @@
 #include <string.h>
 
 extern DMA_HandleTypeDef hdma_uart8_rx;
-uint8_t Face_RxBuff[128];
+__attribute__((section("._D1_Area"))) uint8_t Face_RxBuff[128];
 
 void Facial_expression_init(void)
 {
