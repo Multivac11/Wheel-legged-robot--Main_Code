@@ -17,7 +17,7 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
     if(huart == &huart2)
     {
         HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_10);
-        HI91_UARTE_RxCallback(Size);
+        HI91_UARTE_RxCallback(Size, &hi91_data);
     }
     if(huart == &huart3)
     {
@@ -46,7 +46,7 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
     if (huart == &huart10)
     {
         HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_11);
-        ELRS_UARTE_RxCallback(Size);
+        ELRS_UARTE_RxCallback(Size,&elrs_data);
     }
 
 }

@@ -26,7 +26,7 @@ void CH010_HI91_Init(void)
 }
 
 
-void HI91_UARTE_RxCallback(uint16_t Size)
+void HI91_UARTE_RxCallback(uint16_t Size,HI91_T *hi91_date)
 {
     uint16_t payload_len;
     uint16_t crc;
@@ -37,39 +37,39 @@ void HI91_UARTE_RxCallback(uint16_t Size)
 
     if(crc == ((hi91_data_temp[5]<<8)+hi91_data_temp[4]))
     {
-        hi91_data.rx_counter++;
-        hi91_data.pps_sync_stamp = hi91_data_temp[7] + (hi91_data_temp[8] << 8);
-        hi91_data.pps_sync_stamp = (uint16_t)(hi91_data_temp[7] + (hi91_data_temp[8] << 8));
-        hi91_data.temp = (int8_t)(hi91_data_temp[9]);
-        hi91_data.air_pressure = (float)(hi91_data_temp[10] + (hi91_data_temp[11] << 8) + (hi91_data_temp[12] << 16) + (hi91_data_temp[13] << 24));
-        hi91_data.system_time =(hi91_data_temp[14] + (hi91_data_temp[15] << 8) + (hi91_data_temp[16] << 16) + (hi91_data_temp[17] << 24));
+        hi91_date->rx_counter++;
+        hi91_date->pps_sync_stamp = hi91_data_temp[7] + (hi91_data_temp[8] << 8);
+        hi91_date->pps_sync_stamp = (uint16_t)(hi91_data_temp[7] + (hi91_data_temp[8] << 8));
+        hi91_date->temp = (int8_t)(hi91_data_temp[9]);
+        hi91_date->air_pressure = (float)(hi91_data_temp[10] + (hi91_data_temp[11] << 8) + (hi91_data_temp[12] << 16) + (hi91_data_temp[13] << 24));
+        hi91_date->system_time =(hi91_data_temp[14] + (hi91_data_temp[15] << 8) + (hi91_data_temp[16] << 16) + (hi91_data_temp[17] << 24));
         //pitch/x加速度
-        hi91_data.acc[0]  = hexToFloat(hi91_data_temp[18] + (hi91_data_temp[19] << 8) + (hi91_data_temp[20] << 16) + (hi91_data_temp[21] << 24));
+        hi91_date->acc[0]  = hexToFloat(hi91_data_temp[18] + (hi91_data_temp[19] << 8) + (hi91_data_temp[20] << 16) + (hi91_data_temp[21] << 24));
         //roll/y加速度
-        hi91_data.acc[1]  = hexToFloat(hi91_data_temp[22] + (hi91_data_temp[23] << 8) + (hi91_data_temp[24] << 16) + (hi91_data_temp[25] << 24));
+        hi91_date->acc[1]  = hexToFloat(hi91_data_temp[22] + (hi91_data_temp[23] << 8) + (hi91_data_temp[24] << 16) + (hi91_data_temp[25] << 24));
         //yaw/z加速度
-        hi91_data.acc[2]  = hexToFloat(hi91_data_temp[26] + (hi91_data_temp[27] << 8) + (hi91_data_temp[28] << 16) + (hi91_data_temp[29] << 24));
+        hi91_date->acc[2]  = hexToFloat(hi91_data_temp[26] + (hi91_data_temp[27] << 8) + (hi91_data_temp[28] << 16) + (hi91_data_temp[29] << 24));
         //pitch/x角速度dps
-        hi91_data.gyr[0]  = hexToFloat(hi91_data_temp[30] + (hi91_data_temp[31] << 8) + (hi91_data_temp[32] << 16) + (hi91_data_temp[33] << 24));
+        hi91_date->gyr[0]  = hexToFloat(hi91_data_temp[30] + (hi91_data_temp[31] << 8) + (hi91_data_temp[32] << 16) + (hi91_data_temp[33] << 24));
         //roll/y角速度dps
-        hi91_data.gyr[1]  = hexToFloat(hi91_data_temp[34] + (hi91_data_temp[35] << 8) + (hi91_data_temp[36] << 16) + (hi91_data_temp[37] << 24));
+        hi91_date->gyr[1]  = hexToFloat(hi91_data_temp[34] + (hi91_data_temp[35] << 8) + (hi91_data_temp[36] << 16) + (hi91_data_temp[37] << 24));
         //yaw/z角速度dps
-        hi91_data.gyr[2]  = hexToFloat(hi91_data_temp[38] + (hi91_data_temp[39] << 8) + (hi91_data_temp[40] << 16) + (hi91_data_temp[41] << 24));
-        hi91_data.mag[0]  = hexToFloat(hi91_data_temp[42] + (hi91_data_temp[43] << 8) + (hi91_data_temp[44] << 16) + (hi91_data_temp[45] << 24));
-        hi91_data.mag[1]  = hexToFloat(hi91_data_temp[46] + (hi91_data_temp[47] << 8) + (hi91_data_temp[48] << 16) + (hi91_data_temp[49] << 24));
-        hi91_data.mag[2]  = hexToFloat(hi91_data_temp[50] + (hi91_data_temp[51] << 8) + (hi91_data_temp[52] << 16) + (hi91_data_temp[53] << 24));
-        hi91_data.roll    = hexToFloat(hi91_data_temp[54] + (hi91_data_temp[55] << 8) + (hi91_data_temp[56] << 16) + (hi91_data_temp[57] << 24));
-        hi91_data.pitch   = hexToFloat(hi91_data_temp[58] + (hi91_data_temp[59] << 8) + (hi91_data_temp[60] << 16) + (hi91_data_temp[61] << 24));
-        hi91_data.yaw     = hexToFloat(hi91_data_temp[62] + (hi91_data_temp[63] << 8) + (hi91_data_temp[64] << 16) + (hi91_data_temp[65] << 24));
-        hi91_data.quat[0] = hexToFloat(hi91_data_temp[66] + (hi91_data_temp[67] << 8) + (hi91_data_temp[68] << 16) + (hi91_data_temp[69] << 24));
-        hi91_data.quat[1] = hexToFloat(hi91_data_temp[70] + (hi91_data_temp[71] << 8) + (hi91_data_temp[72] << 16) + (hi91_data_temp[73] << 24));
-        hi91_data.quat[2] = hexToFloat(hi91_data_temp[74] + (hi91_data_temp[75] << 8) + (hi91_data_temp[76] << 16) + (hi91_data_temp[77] << 24));
-        hi91_data.quat[3] = hexToFloat(hi91_data_temp[78] + (hi91_data_temp[79] << 8) + (hi91_data_temp[80] << 16) + (hi91_data_temp[81] << 24));
+        hi91_date->gyr[2]  = hexToFloat(hi91_data_temp[38] + (hi91_data_temp[39] << 8) + (hi91_data_temp[40] << 16) + (hi91_data_temp[41] << 24));
+        hi91_date->mag[0]  = hexToFloat(hi91_data_temp[42] + (hi91_data_temp[43] << 8) + (hi91_data_temp[44] << 16) + (hi91_data_temp[45] << 24));
+        hi91_date->mag[1]  = hexToFloat(hi91_data_temp[46] + (hi91_data_temp[47] << 8) + (hi91_data_temp[48] << 16) + (hi91_data_temp[49] << 24));
+        hi91_date->mag[2]  = hexToFloat(hi91_data_temp[50] + (hi91_data_temp[51] << 8) + (hi91_data_temp[52] << 16) + (hi91_data_temp[53] << 24));
+        hi91_date->roll    = hexToFloat(hi91_data_temp[54] + (hi91_data_temp[55] << 8) + (hi91_data_temp[56] << 16) + (hi91_data_temp[57] << 24));
+        hi91_date->pitch   = hexToFloat(hi91_data_temp[58] + (hi91_data_temp[59] << 8) + (hi91_data_temp[60] << 16) + (hi91_data_temp[61] << 24));
+        hi91_date->yaw     = hexToFloat(hi91_data_temp[62] + (hi91_data_temp[63] << 8) + (hi91_data_temp[64] << 16) + (hi91_data_temp[65] << 24));
+        hi91_date->quat[0] = hexToFloat(hi91_data_temp[66] + (hi91_data_temp[67] << 8) + (hi91_data_temp[68] << 16) + (hi91_data_temp[69] << 24));
+        hi91_date->quat[1] = hexToFloat(hi91_data_temp[70] + (hi91_data_temp[71] << 8) + (hi91_data_temp[72] << 16) + (hi91_data_temp[73] << 24));
+        hi91_date->quat[2] = hexToFloat(hi91_data_temp[74] + (hi91_data_temp[75] << 8) + (hi91_data_temp[76] << 16) + (hi91_data_temp[77] << 24));
+        hi91_date->quat[3] = hexToFloat(hi91_data_temp[78] + (hi91_data_temp[79] << 8) + (hi91_data_temp[80] << 16) + (hi91_data_temp[81] << 24));
         memset(hi91_data_temp, 0, sizeof(hi91_data_temp));
     }
     else
     {
-        hi91_data.eorror_crc_count++;
+        hi91_date->eorror_crc_count++;
     }
 
     CH010_HI91_Init();

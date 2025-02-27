@@ -19,7 +19,7 @@ function K = get_k_length(leg_length)
     LM1=leg_length/2;                 %摆杆重心到其转轴距离
     % L1=0.5;                  %摆杆重心到驱动轮轴距离
     % LM1=0.5;                 %摆杆重心到其转轴距离
-    l1=0.02;                          %机体质心距离转轴距离
+    l1=0.1;                          %机体质心距离转轴距离
     mw1=0.73;                         %驱动轮质量
     mp1=1.626;                         %杆质量
     M1=9.5;                          %机体质量
@@ -50,9 +50,9 @@ function K = get_k_length(leg_length)
     B=subs(B,[R,L,LM,l,mw,mp,M,Iw,Ip,IM,g],[R1,L1,LM1,l1,mw1,mp1,M1,Iw1,Ip1,IM1,9.81]);
     B=double(B);
 
-    Q=diag([10 1 100 600 5000 1]);%theta d_theta x d_x phi d_phi%10 1 100 600 4000 1
+    Q=diag([10 1 100 800 5000 1]);%theta d_theta x d_x phi d_phi%10 1 100 600 4000 1
                                   %theta d_theta x d_x phi d_phi%        
-    % R=[240 0;0 25];                %T Tp
+     % R=[240 0;0 25];                %T Tp
 
     R=[90 0;0 4]; %这套速度权重要大于位移权重
 

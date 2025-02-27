@@ -28,7 +28,7 @@ typedef struct __attribute__((__packed__))
 } HI91_T;
 
 void CH010_HI91_Init(void);
-void HI91_UARTE_RxCallback(uint16_t Size);
+void HI91_UARTE_RxCallback(uint16_t Size,HI91_T *hi91_t);
 
 extern  HI91_T hi91_data;
 

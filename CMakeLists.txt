@@ -83,6 +83,7 @@ add_executable(${PROJECT_NAME}.elf ${SOURCES} ${LINKER_SCRIPT})
 
 target_link_libraries(${PROJECT_NAME}.elf ${CMAKE_SOURCE_DIR}/User/Lib/libarm_cortexM4lf_math.a)
 
+
 set(HEX_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.hex)
 set(BIN_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bin)
 

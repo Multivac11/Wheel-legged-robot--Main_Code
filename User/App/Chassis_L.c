@@ -37,22 +37,22 @@ void ChassisL_init(chassis_t *chassis,vmc_leg_t *vmc)
 
     VMC_init(vmc);//给杆长赋值
 
-    BasePID_Init(&LegL_pid,350.0f , 0 ,3000.0f, 0);
+    BasePID_Init(&LegL_pid,700.0f , 0 ,3000.0f, 0);
 }
 
 void ChassisL_task(void)
 {
-    chassisL_feedback_update(&chassis_move,&left);//更新数据
+    chassisL_feedback_update(&chassis_move,&left,&hi91_data);//更新数据
     chassisL_control(&chassis_move,&left,&hi91_data,LQR_K_L,LegL_pid);//控制计算
 }
 
-void chassisL_feedback_update(chassis_t *chassis,vmc_leg_t *vmc)
+void chassisL_feedback_update(chassis_t *chassis,vmc_leg_t *vmc,HI91_T *hi91)
 {
-    vmc->phi1 = ((A1_Motor[A1_Motor_left_2].motor_recv.original_Pos + 196) * PI/180);
+    vmc->phi1 = ((A1_Motor[A1_Motor_left_2].motor_recv.original_Pos + 194) * PI/180);
     vmc->phi4 = ((A1_Motor[A1_Motor_left_1].motor_recv.original_Pos - 50) * PI/180);
 
-    chassis->myPithL = (0.0f - hi91_data.pitch * PI/180);
-    chassis->myPithGyroL = (0.0f - hi91_data.gyr[0] * PI/180);
+    chassis->myPithL = (0.0f - (hi91->pitch+1) * PI/180);
+    chassis->myPithGyroL = (0.0f - hi91->gyr[0] * PI/180);
 }
 uint8_t  left_flag;
 void chassisL_control(chassis_t *chassis,vmc_leg_t *vmcl,HI91_T *hi91,double *LQR_K,BasePID_Object LegL_pid)
@@ -81,13 +81,13 @@ void chassisL_control(chassis_t *chassis,vmc_leg_t *vmcl,HI91_T *hi91,double *LQ
 
     vmcl->Tp = vmcl->Tp + chassis->leg_tp;//髋关节输出力矩
 
-    vmcl->F0 = Mg/arm_cos_f32(vmcl->theta)+BasePID_PositionControl(&LegL_pid, chassis->leg_set_L , vmcl->L0)+chassis->now_roll_set ;//前馈+pd
+    vmcl->F0 = (Mg/2)/arm_cos_f32(vmcl->theta)+BasePID_PositionControl(&LegL_pid, chassis->leg_set_L , vmcl->L0)+chassis->now_roll_set ;//前馈+pd
 
     left_flag = ground_detectionL(vmcl);//左腿离地检测
 
     if(chassis->recover_flag==0)
     {//倒地自起不需要检测是否离地
-        if(left_flag==1&&right_flag==1&&vmcl->leg_flag==0)
+        if(left_flag == 1 && right_flag == 1 && vmcl->leg_flag == 0)
         {//当两腿同时离地并且遥控器没有在控制腿的伸缩时，才认为离地
             chassis->wheel_motor[1].wheel_T=0.0f;
             vmcl->Tp = (float)(LQR_K[6]*(vmcl->theta-0.0f)+ LQR_K[7]*(vmcl->d_theta-0.0f));
@@ -102,7 +102,7 @@ void chassisL_control(chassis_t *chassis,vmc_leg_t *vmcl,HI91_T *hi91,double *LQ
             vmcl->leg_flag=0;//置为0
         }
     }
-    else if(chassis->recover_flag==1)
+    else if(chassis->recover_flag == 1)
     {
         vmcl->Tp=0.0f;
     }

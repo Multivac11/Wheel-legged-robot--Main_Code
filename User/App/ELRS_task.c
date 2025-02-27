@@ -12,7 +12,7 @@ uint16_t ELRS_TIME = 1;//R9DS任务周期是1ms
 
 void ELRS_Task(ELRS_Data *Elrs_data,chassis_t *chassis)
 {
-    if(Elrs_data->E == 1 && chassis->start_flag == 0)
+    if(Elrs_data->F == 1 && chassis->start_flag == 0)
     {
         chassis->start_flag = 1;
         if(chassis->recover_flag==0
@@ -22,7 +22,7 @@ void ELRS_Task(ELRS_Data *Elrs_data,chassis_t *chassis)
             chassis->recover_flag=1;//需要自起
         }
     }
-    else if(Elrs_data->E == 0 && chassis->start_flag == 1)
+    else if(Elrs_data->F == 0 && chassis->start_flag == 1)
     {
         chassis->start_flag = 0;
         chassis->recover_flag=0;
@@ -34,8 +34,7 @@ void ELRS_Task(ELRS_Data *Elrs_data,chassis_t *chassis)
         chassis->target_v = (float)(Elrs_data->Right_Y)*(0.017f);//往前大于0
         slope_following(&chassis->target_v,&chassis->v_set,0.0080f);	//	坡度跟随
 
-        chassis->x_set = (float)(chassis->x_set+(chassis->v_set)*(4.5f)*ELRS_TIME/1000);
-
+        chassis->x_set = (float)(chassis->x_set+(chassis->v_set)*((float)ELRS_TIME/1000));
 
 //		chassis->v_set = 0;
 //		chassis->target_x = chassis->target_x + ((float)(rc_ctrl->rc.ch3-1000))*(-0.0000015f);
@@ -44,7 +43,7 @@ void ELRS_Task(ELRS_Data *Elrs_data,chassis_t *chassis)
         chassis->turn_set = chassis->turn_set+(Elrs_data->Left_X)*(-0.00002f);//往右大于0
 
         //腿长变化
-        chassis->leg_set = chassis->leg_set+((float)Elrs_data->Right_X)*(0.0000003f);
+        chassis->leg_set = chassis->leg_set+((float)Elrs_data->Right_X)*(0.000002f);
         mySaturate_f(&chassis->leg_set,0.095f,0.398f);//腿长限幅在0.095m到0.398m之间
 //		chassis->roll_target = ((float)(rc_ctrl->rc.ch2-127))*(0.0025f);
         chassis->roll_target = 0;

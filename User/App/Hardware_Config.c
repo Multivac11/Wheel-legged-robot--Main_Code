@@ -13,6 +13,7 @@
 #include "Chassis_R.h"
 #include "Chassis_L.h"
 #include "Facial_expression.h"
+#include "observe.h"
 
 Clock task_clk;
 void HardwareConfig(void) {
@@ -27,6 +28,7 @@ void HardwareConfig(void) {
     HAL_Delay(50);
     ChassisL_init(&chassis_move,&left);
     HAL_Delay(50);
+    xvEstimateKF_Init(&vaEstimateKF);
 
     HAL_TIM_Base_Start_IT(&htim14);
 

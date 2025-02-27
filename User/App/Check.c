@@ -45,7 +45,23 @@ void Online_check(void)
     else
     {
         elrs_data.isOnline = 0;
+        if(elrs_data.isOnline == 0)
+        {
+            elrs_data.Right_X = 0;
+            elrs_data.Right_Y = 0;
+            elrs_data.Left_X = 0;
+            elrs_data.Left_Y = 0;
+            elrs_data.A = 0;
+            elrs_data.B = 0;
+            elrs_data.C = 0;
+            elrs_data.D = 0;
+            elrs_data.E = 0;
+            elrs_data.F = 0;
+            elrs_data.S1 = 0;
+            elrs_data.S2 = 0;
+        }
         HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, GPIO_PIN_RESET);
+        ELRS_Init();
     }
 }
 

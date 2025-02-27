@@ -22,17 +22,25 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
     if(htim == &htim14)
     {
-        task_clk.tim14_clk++;
+        task_clk.tim14_clk ++;
         Check_FPS();
         Check_Status();
         Online_check();
         ELRS_Task(&elrs_data,&chassis_move);
-        ChassisR_task();
-        ChassisL_task();
-        Facial_expression_Control();
-        Observe_task();
+        if(task_clk.tim14_clk % 2 == 0)
+        {
+            ChassisR_task();
+            ChassisL_task();
+        }
 
-        if(chassis_move.start_flag==1)
+        Facial_expression_Control();
+        if(task_clk.tim14_clk % 1 == 0)
+        {
+            Observe_task();
+        }
+
+
+        if(chassis_move.start_flag==1 && task_clk.tim14_clk % 2 == 0)
         {
             Set_moto_current(&hfdcan1,0x200,chassis_move.wheel_motor[1].para.Output);
             Set_moto_current(&hfdcan2,0x200,chassis_move.wheel_motor[0].para.Output);
@@ -48,8 +56,23 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
             Modfiy_Torque_Cmd(&A1_Motor[A1_Motor_right_2].motor_send,A1_Motor_right_2_ID, A1_Motor[A1_Motor_right_2].motor_send.T);
             A1_Motor_Send_Cmd(&A1_Motor[A1_Motor_right_2].motor_send, A1_Motor_right_2);
+//            Set_moto_current(&hfdcan1,0x200,0);
+//            Set_moto_current(&hfdcan2,0x200,0);
+//
+//            //阻尼模式
+//            Modfiy_Speed_Cmd(&A1_Motor[A1_Motor_left_1].motor_send, A1_Motor_left_1_ID, 0.0f);
+//            A1_Motor_Send_Cmd(&A1_Motor[A1_Motor_left_1].motor_send, A1_Motor_left_1);
+//
+//            Modfiy_Speed_Cmd(&A1_Motor[A1_Motor_left_2].motor_send, A1_Motor_left_2_ID, 0.0f);
+//            A1_Motor_Send_Cmd(&A1_Motor[A1_Motor_left_2].motor_send, A1_Motor_left_2);
+//
+//            Modfiy_Speed_Cmd(&A1_Motor[A1_Motor_right_1].motor_send, A1_Motor_right_1_ID, 0.0f);
+//            A1_Motor_Send_Cmd(&A1_Motor[A1_Motor_right_1].motor_send, A1_Motor_right_1);
+//
+//            Modfiy_Speed_Cmd(&A1_Motor[A1_Motor_right_2].motor_send, A1_Motor_right_2_ID, 0.0f);
+//            A1_Motor_Send_Cmd(&A1_Motor[A1_Motor_right_2].motor_send, A1_Motor_right_2);
         }
-        else if(chassis_move.start_flag==0)
+        else if(chassis_move.start_flag==0 && task_clk.tim14_clk % 2 == 0)
         {
             Set_moto_current(&hfdcan1,0x200,0);
             Set_moto_current(&hfdcan2,0x200,0);

@@ -19,6 +19,9 @@
 #include "observe.h"
 #include "kalman_filter.h"
 #include "CH010_HI91.h"
+#include "Chassis_R.h"
+#include "VMC_calc.h"
+#include "Chassis_L.h"
 
 KalmanFilter_t vaEstimateKF;	   // 卡尔曼滤波器结构体
 
@@ -45,7 +48,7 @@ extern vmc_leg_t right;
 extern vmc_leg_t left;
 
 float vel_acc[2];
-uint32_t OBSERVE_TIME=3;//任务周期是3ms
+uint32_t OBSERVE_TIME=1;//任务周期是1ms
 
 static float wr,wl=0.0f;
 static float vrb,vlb=0.0f;
@@ -53,14 +56,14 @@ static float aver_v=0.0f;
 
 void Observe_task(void)
 {
-    wr= -chassis_move.wheel_motor[0].para.AngleSpeed-hi91_data.gyr[0]+right.d_alpha;//右边驱动轮转子相对大地角速度，这里定义的是顺时针为正
+    wr= (-chassis_move.wheel_motor[0].para.AngleSpeed-hi91_data.gyr[0]+right.d_alpha)*17/268;//右边驱动轮转子相对大地角速度，这里定义的是顺时针为正
     vrb = wr*0.0603f + right.L0*right.d_theta*arm_cos_f32(right.theta)+right.d_L0*arm_sin_f32(right.theta);//机体b系的速度
 
-    wl= -chassis_move.wheel_motor[1].para.AngleSpeed+hi91_data.gyr[0]+left.d_alpha;//左边驱动轮转子相对大地角速度，这里定义的是顺时针为正
+    wl= (-chassis_move.wheel_motor[1].para.AngleSpeed+hi91_data.gyr[0]+left.d_alpha)*17/268;//左边驱动轮转子相对大地角速度，这里定义的是顺时针为正
     vlb = wl*0.0603f + left.L0*left.d_theta*arm_cos_f32(left.theta)+left.d_L0*arm_sin_f32(left.theta);//机体b系的速度
 
     aver_v=(vrb-vlb)/2.0f;//取平均
-//    xvEstimateKF_Update(&vaEstimateKF,hi91_data.acc[0],aver_v);
+    xvEstimateKF_Update(&vaEstimateKF,hi91_data.acc[0],aver_v);
 
     //原地自转的过程中v_filter和x_filter应该都是为0
 //    chassis_move.v_filter = vel_acc[0];//得到卡尔曼滤波后的速度

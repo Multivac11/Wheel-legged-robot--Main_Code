@@ -112,6 +112,6 @@ typedef struct
 extern ELRS_Data elrs_data;
 
 void ELRS_Init(void);
-void ELRS_UARTE_RxCallback(uint16_t Size);
+void ELRS_UARTE_RxCallback(uint16_t Size,ELRS_Data *elrs_data);
 
 #endif //BALANCE_LEG_V2_ELRS_DRIVE_H
