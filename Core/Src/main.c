@@ -135,8 +135,8 @@ int main(void)
 //      printf("%f,%f,%f\n", A1_Motor[1].motor_recv.Pos,A1_Motor[0].motor_recv.W,A1_Motor[1].motor_recv.W);
 //      printf("%d,%f,%d,%d,%d,%f\n", A1_Motor[A1_Motor_left_1].motor_recv.FPS,A1_Motor[A1_Motor_left_2].motor_recv.original_Pos,A1_Motor[A1_Motor_right_1].motor_recv.FPS,A1_Motor[A1_Motor_right_2].motor_recv.FPS,hi91_data.FPS,elrs_data.Left_Y);
 //      printf("%f,%f,%f,%f\n",A1_Motor[A1_Motor_left_1].motor_recv.original_Pos,A1_Motor[A1_Motor_left_2].motor_recv.original_Pos,A1_Motor[A1_Motor_right_1].motor_recv.original_Pos,A1_Motor[A1_Motor_right_2].motor_recv.original_Pos);
-      printf("%f,%f,%f,%f,%f\n",right.L0,chassis_move.leg_set,right.FN,right.F0,A1_Motor[A1_Motor_right_2].motor_send.T);
-//      printf("%f,%f,%f,%f,%f\n",chassis_move.wheel_motor[0].wheel_T,chassis_move.wheel_motor[1].wheel_T,right.torque_set[0],chassis_move.x_set,right.L0);
+//      printf("%f,%f,%f,%f,%f\n",right.L0,chassis_move.leg_set,right.FN,right.F0,A1_Motor[A1_Motor_right_2].motor_send.T);
+      printf("%f,%f,%f,%f,%f\n",chassis_move.wheel_motor[0].wheel_T,chassis_move.wheel_motor[1].wheel_T,right.torque_set[0],chassis_move.x_set,right.L0);
       HAL_Delay(10);
     /* USER CODE END WHILE */
 

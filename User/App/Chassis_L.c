@@ -37,7 +37,7 @@ void ChassisL_init(chassis_t *chassis,vmc_leg_t *vmc)
 
     VMC_init(vmc);//给杆长赋值
 
-    BasePID_Init(&LegL_pid,700.0f , 0 ,3000.0f, 0);
+    BasePID_Init(&LegL_pid,450.0f , 0 ,3000.0f, 0);
 }
 
 void ChassisL_task(void)

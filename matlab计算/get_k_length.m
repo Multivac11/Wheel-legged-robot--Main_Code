@@ -50,11 +50,14 @@ function K = get_k_length(leg_length)
     B=subs(B,[R,L,LM,l,mw,mp,M,Iw,Ip,IM,g],[R1,L1,LM1,l1,mw1,mp1,M1,Iw1,Ip1,IM1,9.81]);
     B=double(B);
 
-    Q=diag([10 1 100 800 5000 1]);%theta d_theta x d_x phi d_phi%10 1 100 600 4000 1
+    Q=diag([1 1 100 600 5000 1]);%theta d_theta x d_x phi d_phi%10 1 100 600 4000 1
                                   %theta d_theta x d_x phi d_phi%        
      % R=[240 0;0 25];                %T Tp
 
-    R=[90 0;0 4]; %这套速度权重要大于位移权重
+    R=[20 0;0 1]; %这套速度权重要大于位移权重
+
+    % Q=diag([1000 1 1 2 20000 1]);
+    % R=[0.25 0;0 1.5];
 
     K=lqr(A,B,Q,R);
   
