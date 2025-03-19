@@ -3,6 +3,7 @@
 //
 
 #include "Control_logic.h"
+#include "CH010_HI91.h"
 #include "tim.h"
 #include "Motor_Dji.h"
 #include "fdcan.h"
@@ -27,6 +28,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
         Check_Status();
         Online_check();
         ELRS_Task(&elrs_data,&chassis_move);
+        Get_total_yaw(&hi91_data);
         if(task_clk.tim14_clk % 2 == 0)
         {
             ChassisR_task();

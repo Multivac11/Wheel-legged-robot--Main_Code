@@ -72,7 +72,28 @@ void HI91_UARTE_RxCallback(uint16_t Size,HI91_T *hi91_date)
         hi91_date->eorror_crc_count++;
     }
 
+
     CH010_HI91_Init();
+}
+
+void Get_total_yaw(HI91_T *hi91_date)
+{
+//    hi91_date->total_yaw = hi91_date->yaw;
+    //陀螺仪过零处理
+    if((hi91_date->yaw < -100) && (hi91_date->last_yaw > 100))
+    {
+        hi91_date->total_yaw += 360 + hi91_date->yaw - hi91_date->last_yaw;
+    }
+    else if ((hi91_date->yaw > 100) && (hi91_date->last_yaw < -100))
+    {
+        hi91_date->total_yaw += -360 + hi91_date->yaw - hi91_date->last_yaw;
+    }
+    else
+    {
+        hi91_date->total_yaw += hi91_date->yaw - hi91_date->last_yaw;
+    }
+
+    hi91_date->last_yaw = hi91_date->yaw;
 }
 
 /**

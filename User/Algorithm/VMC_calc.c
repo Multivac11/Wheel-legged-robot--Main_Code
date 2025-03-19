@@ -43,7 +43,7 @@ void VMC_calc_1_right(vmc_leg_t *vmc,HI91_T *hi91,float dt)//计算theta和d_the
     vmc->L0 = sqrt((vmc->XC - vmc->l5/2.0f)*(vmc->XC - vmc->l5/2.0f) + vmc->YC*vmc->YC);
 
     vmc->phi0 = atan2f(vmc->YC,(vmc->XC - vmc->l5/2.0f));//phi0用于计算lqr需要的theta
-    vmc->alpha=pi/2.0f-vmc->phi0 ;
+    vmc->alpha = pi/2.0f-vmc->phi0 ;
 
     if(vmc->first_flag == 0)
     {

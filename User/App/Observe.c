@@ -66,11 +66,11 @@ void Observe_task(void)
     xvEstimateKF_Update(&vaEstimateKF,hi91_data.acc[0],aver_v);
 
     //原地自转的过程中v_filter和x_filter应该都是为0
-//    chassis_move.v_filter = vel_acc[0];//得到卡尔曼滤波后的速度
+//    chassis_move.v_filter = aver_v;//得到卡尔曼滤波后的速度
 //    chassis_move.x_filter = chassis_move.x_filter+chassis_move.v_filter*((float)OBSERVE_TIME/1000.0f);
 
     //如果想直接用轮子速度，不做融合的话可以这样
-	chassis_move.v_filter = (chassis_move.wheel_motor[0].para.AngleSpeed-chassis_move.wheel_motor[1].para.AngleSpeed)*(0.075f)/2.0f*17/268;//0.075是轮子半径，电机反馈的是角速度，乘半径后得到线速度，数学模型中定义的是轮子顺时针为正，所以要乘个负号
+	chassis_move.v_filter = (chassis_move.wheel_motor[0].para.AngleSpeed-chassis_move.wheel_motor[1].para.AngleSpeed)*(0.15f)/2.0f*17/268;//0.075是轮子半径，电机反馈的是角速度，乘半径后得到线速度，数学模型中定义的是轮子顺时针为正，所以要乘个负号
 	chassis_move.x_filter = chassis_move.x_filter+chassis_move.v_filter*((float)OBSERVE_TIME/1000.0f);
 
 }

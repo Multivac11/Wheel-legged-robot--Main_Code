@@ -31,10 +31,10 @@ void ELRS_Task(ELRS_Data *Elrs_data,chassis_t *chassis)
     if(chassis->start_flag==1)
     {//启动
 
-        chassis->target_v = (float)(Elrs_data->Right_Y)*(0.017f);//往前大于0
-        slope_following(&chassis->target_v,&chassis->v_set,0.0080f);	//	坡度跟随
+        chassis->target_v = (float)(Elrs_data->Right_Y)*(0.02f);//往前大于0
+        slope_following(&chassis->target_v,&chassis->v_set,0.02f);	//	坡度跟随
 
-        chassis->x_set = (float)(chassis->x_set+(chassis->v_set)*((float)ELRS_TIME/1000));
+        chassis->x_set = (float)(chassis->x_set+(2.0f)*(chassis->v_set)*((float)ELRS_TIME/1000));
 
 //		chassis->v_set = 0;
 //		chassis->target_x = chassis->target_x + ((float)(rc_ctrl->rc.ch3-1000))*(-0.0000015f);

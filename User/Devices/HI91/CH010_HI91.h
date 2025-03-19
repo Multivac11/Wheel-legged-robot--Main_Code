@@ -20,6 +20,8 @@ typedef struct __attribute__((__packed__))
     float           roll;           /* Roll angle */
     float           pitch;          /* Pitch angle */
     float           yaw;            /* Yaw angle */
+    float           last_yaw;
+    float           total_yaw;
     float           quat[4];        /* Quaternion (w, x, y, z) */
     uint8_t         eorror_crc_count;
     uint16_t        eorror_check;
@@ -28,6 +30,7 @@ typedef struct __attribute__((__packed__))
 } HI91_T;
 
 void CH010_HI91_Init(void);
+void Get_total_yaw(HI91_T *hi91_date);
 void HI91_UARTE_RxCallback(uint16_t Size,HI91_T *hi91_t);
 
 extern  HI91_T hi91_data;
