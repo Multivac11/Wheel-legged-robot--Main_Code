@@ -54,7 +54,7 @@ function K = get_k_length(leg_length)
                                   %theta d_theta x d_x phi d_phi%        
      % R=[240 0;0 25];                %T Tp
 
-    R=[280 0;0 17]; %这套速度权重要大于位移权重
+    R=[260 0;0 15]; %这套速度权重要大于位移权重
 
     % Q=diag([1000 1 1 2 20000 1]);
     % R=[1.5 0;0 0.25];

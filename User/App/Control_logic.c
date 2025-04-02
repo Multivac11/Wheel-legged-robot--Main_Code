@@ -33,9 +33,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
         {
             ChassisR_task();
             ChassisL_task();
+
         }
 
-        Facial_expression_Control();
+ //       Facial_expression_Control();
         if(task_clk.tim14_clk % 1 == 0)
         {
             Observe_task();

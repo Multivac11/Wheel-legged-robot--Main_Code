@@ -1794,6 +1794,8 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
  .data          0x00000000        0x0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
+ .text.Facial_expression_Control
+                0x00000000        0x2 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
  .text          0x00000000        0x0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj
  .data          0x00000000        0x0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj
@@ -3357,51 +3359,47 @@ LOAD D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+
                 0x0800984c       0x50 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj
                 0x0800984c                ChassisL_task
  .text.ChassisR_init
-                0x0800989c       0x98 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
+                0x0800989c       0x9c CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
                 0x0800989c                ChassisR_init
  .text.chassisR_feedback_update
-                0x08009934       0xe0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
-                0x08009934                chassisR_feedback_update
+                0x08009938       0xe0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
+                0x08009938                chassisR_feedback_update
  .text.mySaturate_f
-                0x08009a14       0x24 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
-                0x08009a14                mySaturate_f
+                0x08009a18       0x24 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
+                0x08009a18                mySaturate_f
  .text.mySaturate_i
-                0x08009a38       0x14 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
-                0x08009a38                mySaturate_i
+                0x08009a3c       0x14 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
+                0x08009a3c                mySaturate_i
  .text.chassisR_control
-                0x08009a4c      0x4c4 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
-                0x08009a4c                chassisR_control
+                0x08009a50      0x4c4 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
+                0x08009a50                chassisR_control
  .text.ChassisR_task
-                0x08009f10       0xa0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
-                0x08009f10                ChassisR_task
+                0x08009f14       0xa0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
+                0x08009f14                ChassisR_task
  .text.Check_FPS
-                0x08009fb0       0x90 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
-                0x08009fb0                Check_FPS
+                0x08009fb4       0x90 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
+                0x08009fb4                Check_FPS
  .text.Online_check
-                0x0800a040       0x64 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
-                0x0800a040                Online_check
+                0x0800a044       0x64 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
+                0x0800a044                Online_check
  .text.Check_Status
-                0x0800a0a4       0x34 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
-                0x0800a0a4                Check_Status
+                0x0800a0a8       0x34 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
+                0x0800a0a8                Check_Status
  .text.HAL_TIM_PeriodElapsedCallback
-                0x0800a0d8      0x1a0 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj
-                0x0800a0d8                HAL_TIM_PeriodElapsedCallback
+                0x0800a0dc      0x19c CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj
+                0x0800a0dc                HAL_TIM_PeriodElapsedCallback
  .text.slope_following
                 0x0800a278       0x54 CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj
                 0x0800a278                slope_following
  .text.ELRS_Task
-                0x0800a2cc      0x1fc CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj
+                0x0800a2cc      0x200 CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj
                 0x0800a2cc                ELRS_Task
  .text.Facial_expression_init
-                0x0800a4c8       0x9c CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
-                0x0800a4c8                Facial_expression_init
- .text.Facial_expression_Control
-                0x0800a564        0x2 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
-                0x0800a564                Facial_expression_Control
+                0x0800a4cc       0x9c CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
+                0x0800a4cc                Facial_expression_init
  .text.Facial_expression_Callback
-                0x0800a566        0x8 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
-                0x0800a566                Facial_expression_Callback
- *fill*         0x0800a56e        0x2 
+                0x0800a568        0x8 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
+                0x0800a568                Facial_expression_Callback
  .text.HardwareConfig
                 0x0800a570       0x58 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj
                 0x0800a570                HardwareConfig
@@ -4438,7 +4436,7 @@ LOAD D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+
 LOAD D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libm.a
 LOAD D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x00000000    0x3b749
+.debug_info     0x00000000    0x3b73c
  .debug_info    0x00000000      0xa76 CMakeFiles/Balance_leg_V2.elf.dir/Core/Src/dma.c.obj
  .debug_info    0x00000a76     0x14d2 CMakeFiles/Balance_leg_V2.elf.dir/Core/Src/fdcan.c.obj
  .debug_info    0x00001f48      0x6d9 CMakeFiles/Balance_leg_V2.elf.dir/Core/Src/gpio.c.obj
@@ -4467,28 +4465,28 @@ LOAD D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+
  .debug_info    0x00023441      0x258 CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/Pid.c.obj
  .debug_info    0x00023699      0x9a2 CMakeFiles/Balance_leg_V2.elf.dir/User/Algorithm/VMC_calc.c.obj
  .debug_info    0x0002403b     0x13fe CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj
- .debug_info    0x00025439     0x15a4 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
- .debug_info    0x000269dd      0xaa1 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
- .debug_info    0x0002747e     0x1e5b CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj
- .debug_info    0x000292d9      0xb1c CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj
- .debug_info    0x00029df5      0x90d CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
- .debug_info    0x0002a702     0x1388 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj
- .debug_info    0x0002ba8a      0xeea CMakeFiles/Balance_leg_V2.elf.dir/User/App/Observe.c.obj
- .debug_info    0x0002c974     0x132d CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj
- .debug_info    0x0002dca1     0x12c0 CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj
- .debug_info    0x0002ef61      0xaba CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.obj
- .debug_info    0x0002fa1b      0xdc6 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.obj
- .debug_info    0x000307e1      0xcc0 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj
- .debug_info    0x000314a1     0x12ae CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj
- .debug_info    0x0003274f      0xc1e C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_trans_f32.o)
- .debug_info    0x0003336d      0xbf9 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_sub_f32.o)
- .debug_info    0x00033f66      0xcb5 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_mult_f32.o)
- .debug_info    0x00034c1b      0xd81 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_inverse_f32.o)
- .debug_info    0x0003599c      0xb0c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_init_f32.o)
- .debug_info    0x000364a8      0xbf9 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_add_f32.o)
- .debug_info    0x000370a1     0x1612 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_sin_f32.o)
- .debug_info    0x000386b3     0x1612 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_cos_f32.o)
- .debug_info    0x00039cc5     0x1a84 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .debug_info    0x00025439     0x15a8 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
+ .debug_info    0x000269e1      0xaa1 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
+ .debug_info    0x00027482     0x1e4a CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj
+ .debug_info    0x000292cc      0xb1c CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj
+ .debug_info    0x00029de8      0x90d CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
+ .debug_info    0x0002a6f5     0x1388 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj
+ .debug_info    0x0002ba7d      0xeea CMakeFiles/Balance_leg_V2.elf.dir/User/App/Observe.c.obj
+ .debug_info    0x0002c967     0x132d CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj
+ .debug_info    0x0002dc94     0x12c0 CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj
+ .debug_info    0x0002ef54      0xaba CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.obj
+ .debug_info    0x0002fa0e      0xdc6 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.obj
+ .debug_info    0x000307d4      0xcc0 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj
+ .debug_info    0x00031494     0x12ae CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj
+ .debug_info    0x00032742      0xc1e C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_trans_f32.o)
+ .debug_info    0x00033360      0xbf9 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_sub_f32.o)
+ .debug_info    0x00033f59      0xcb5 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_mult_f32.o)
+ .debug_info    0x00034c0e      0xd81 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_inverse_f32.o)
+ .debug_info    0x0003598f      0xb0c C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_init_f32.o)
+ .debug_info    0x0003649b      0xbf9 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_add_f32.o)
+ .debug_info    0x00037094     0x1612 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .debug_info    0x000386a6     0x1612 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_cos_f32.o)
+ .debug_info    0x00039cb8     0x1a84 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_common_tables.o)
 
 .debug_abbrev   0x00000000     0x6a59
  .debug_abbrev  0x00000000      0x13d CMakeFiles/Balance_leg_V2.elf.dir/Core/Src/dma.c.obj
@@ -4729,7 +4727,7 @@ LOAD D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+
  .debug_rnglists
                 0x000013b4       0x3a CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj
 
-.debug_line     0x00000000    0x24ba7
+.debug_line     0x00000000    0x24b8f
  .debug_line    0x00000000      0x27d CMakeFiles/Balance_leg_V2.elf.dir/Core/Src/dma.c.obj
  .debug_line    0x0000027d      0x7e4 CMakeFiles/Balance_leg_V2.elf.dir/Core/Src/fdcan.c.obj
  .debug_line    0x00000a61      0x2c8 CMakeFiles/Balance_leg_V2.elf.dir/Core/Src/gpio.c.obj
@@ -4760,26 +4758,26 @@ LOAD D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+
  .debug_line    0x0001d6c4      0x6ca CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj
  .debug_line    0x0001dd8e      0x7b4 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
  .debug_line    0x0001e542      0x545 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
- .debug_line    0x0001ea87      0x6a1 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj
- .debug_line    0x0001f128      0x540 CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj
- .debug_line    0x0001f668      0x39d CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
- .debug_line    0x0001fa05      0x66c CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj
- .debug_line    0x00020071      0x5a4 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Observe.c.obj
- .debug_line    0x00020615      0x586 CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj
- .debug_line    0x00020b9b      0x6f0 CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj
- .debug_line    0x0002128b      0x3cd CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.obj
- .debug_line    0x00021658      0x7c9 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.obj
- .debug_line    0x00021e21      0x840 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj
- .debug_line    0x00022661      0x90b CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj
- .debug_line    0x00022f6c      0x330 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_trans_f32.o)
- .debug_line    0x0002329c      0x31e C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_sub_f32.o)
- .debug_line    0x000235ba      0x39a C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_mult_f32.o)
- .debug_line    0x00023954      0x4f6 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_inverse_f32.o)
- .debug_line    0x00023e4a      0x259 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_init_f32.o)
- .debug_line    0x000240a3      0x31e C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_add_f32.o)
- .debug_line    0x000243c1      0x2d0 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_sin_f32.o)
- .debug_line    0x00024691      0x2d3 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_cos_f32.o)
- .debug_line    0x00024964      0x243 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .debug_line    0x0001ea87      0x689 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj
+ .debug_line    0x0001f110      0x540 CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj
+ .debug_line    0x0001f650      0x39d CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
+ .debug_line    0x0001f9ed      0x66c CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj
+ .debug_line    0x00020059      0x5a4 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Observe.c.obj
+ .debug_line    0x000205fd      0x586 CMakeFiles/Balance_leg_V2.elf.dir/User/App/USART_Callback.c.obj
+ .debug_line    0x00020b83      0x6f0 CMakeFiles/Balance_leg_V2.elf.dir/User/BSP/can_bsp.c.obj
+ .debug_line    0x00021273      0x3cd CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Dji_motor/Motor_Dji.c.obj
+ .debug_line    0x00021640      0x7c9 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/ELRS_Control/ELRS_Drive.c.obj
+ .debug_line    0x00021e09      0x840 CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/HI91/CH010_HI91.c.obj
+ .debug_line    0x00022649      0x90b CMakeFiles/Balance_leg_V2.elf.dir/User/Devices/Motor_A1/A1_Motor.c.obj
+ .debug_line    0x00022f54      0x330 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_trans_f32.o)
+ .debug_line    0x00023284      0x31e C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_sub_f32.o)
+ .debug_line    0x000235a2      0x39a C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_mult_f32.o)
+ .debug_line    0x0002393c      0x4f6 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_inverse_f32.o)
+ .debug_line    0x00023e32      0x259 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_init_f32.o)
+ .debug_line    0x0002408b      0x31e C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_mat_add_f32.o)
+ .debug_line    0x000243a9      0x2d0 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .debug_line    0x00024679      0x2d3 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_cos_f32.o)
+ .debug_line    0x0002494c      0x243 C:\Users\w1445\Desktop\Microcontroller_project\Balance_leg\Code\Balance_V2\Balance_leg_V2\User\Lib\libarm_cortexM4lf_math.a(arm_common_tables.o)
 
 .debug_str      0x00000000     0xaec2
  .debug_str     0x00000000     0xaec2 CMakeFiles/Balance_leg_V2.elf.dir/Core/Src/dma.c.obj
@@ -4813,7 +4811,7 @@ LOAD D:/arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+
  .debug_str     0x0000aec2      0x9ba CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_L.c.obj
  .debug_str     0x0000aec2      0x9db CMakeFiles/Balance_leg_V2.elf.dir/User/App/Chassis_R.c.obj
  .debug_str     0x0000aec2      0x698 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Check.c.obj
- .debug_str     0x0000aec2     0x1431 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj
+ .debug_str     0x0000aec2     0x1417 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Control_logic.c.obj
  .debug_str     0x0000aec2      0x7a2 CMakeFiles/Balance_leg_V2.elf.dir/User/App/ELRS_task.c.obj
  .debug_str     0x0000aec2      0x919 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Facial_expression.c.obj
  .debug_str     0x0000aec2      0xfd7 CMakeFiles/Balance_leg_V2.elf.dir/User/App/Hardware_Config.c.obj

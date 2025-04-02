@@ -48,7 +48,7 @@ extern vmc_leg_t right;
 extern vmc_leg_t left;
 
 float vel_acc[2];
-uint32_t OBSERVE_TIME=1;//任务周期是1ms
+uint32_t OBSERVE_TIME = 2;//任务周期是1ms
 
 static float wr,wl=0.0f;
 static float vrb,vlb=0.0f;

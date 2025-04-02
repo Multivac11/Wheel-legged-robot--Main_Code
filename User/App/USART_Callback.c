@@ -80,7 +80,7 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
     if(huart == &huart7)
     {
         A1_Motor_Init(A1_Motor_right_2);
-    }
+    }0
     if(huart == &huart8)
     {
         Facial_expression_init();

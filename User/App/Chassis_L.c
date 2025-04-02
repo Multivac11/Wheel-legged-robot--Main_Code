@@ -24,7 +24,7 @@
 
 vmc_leg_t left;
 BasePID_Object LegL_pid;//左腿的腿长pd
-uint32_t CHASSL_TIME=1;
+uint32_t CHASSL_TIME = 1;
 
 double LQR_K_L[12]={
         -4.4394,   -0.513  , -1.3493,   -1.3052,    2.0990  ,  0.2698,
@@ -37,7 +37,7 @@ void ChassisL_init(chassis_t *chassis,vmc_leg_t *vmc)
 
     VMC_init(vmc);//给杆长赋值
 
-    BasePID_Init(&LegL_pid,500.0f , 0 ,3000.0f, 0);
+    BasePID_Init(&LegL_pid,550.0f , 0 ,3000.0f, 0);
 }
 
 void ChassisL_task(void)

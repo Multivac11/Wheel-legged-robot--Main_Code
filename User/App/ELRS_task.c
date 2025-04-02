@@ -8,7 +8,7 @@
 #include "ELRS_Drive.h"
 
 
-uint16_t ELRS_TIME = 1;//R9DS任务周期是1ms
+uint16_t ELRS_TIME = 1;//任务周期是1ms
 
 void ELRS_Task(ELRS_Data *Elrs_data,chassis_t *chassis)
 {
@@ -34,7 +34,7 @@ void ELRS_Task(ELRS_Data *Elrs_data,chassis_t *chassis)
         chassis->target_v = (float)(Elrs_data->Right_Y)*(0.02f);//往前大于0
         slope_following(&chassis->target_v,&chassis->v_set,0.02f);	//	坡度跟随
 
-        chassis->x_set = (float)(chassis->x_set+(2.0f)*(chassis->v_set)*((float)ELRS_TIME/1000));
+        chassis->x_set = (float)(chassis->x_set+(4.0f)*(chassis->v_set)*((float)ELRS_TIME/1000));
 
 //		chassis->v_set = 0;
 //		chassis->target_x = chassis->target_x + ((float)(rc_ctrl->rc.ch3-1000))*(-0.0000015f);
